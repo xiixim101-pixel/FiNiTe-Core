@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmological Projects - Marcin Słowik</title>
+  <meta name="description" content="Gallery of illustrations and the star sequence from the Finite Core model by Marcin Słowik.">
+  <link rel="icon" type="image/png" href="logo3.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #0d0d0d;
+      color: #ccc;
+      background-image: radial-gradient(#151515 1px, transparent 1px);
+      background-size: 20px 20px;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 30px;
+      background: #000;
+      border-bottom: 1px solid #222;
+    }
+
+    nav#top_menu {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #222;
+      padding: 15px;
+    }
+
+    nav#top_menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      justify-content: center;
+    }
+
+    nav#top_menu a {
+      display: block;
+      padding: 12px 24px;
+      color: #2eb82e;
+      border: 1px solid #2eb82e;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      transition: all 0.3s ease;
+      background: transparent;
+    }
+
+    nav#top_menu a:hover {
+      background-color: rgba(46, 184, 46, 0.08);
+      color: #33cc33;
+      border-color: #33cc33;
+    }
+
+    #main {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    aside#left, aside#right, .article-box, #slider, .monograph-box {
+      background: #141414;
+      border: 1px solid #2c2c2c;
+      border-radius: 3px;
+    }
+
+    aside#left, aside#right {
+      width: 22%;
+      padding: 20px;
+    }
+
+    #content {
+      width: 56%;
+    }
+
+    aside#left ul, aside#right ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0;
+    }
+
+    aside#left li, aside#right li {
+      margin: 10px 0;
+    }
+
+    aside#left a, aside#right a {
+      display: block;
+      padding: 10px;
+      color: #25a025;
+      border: 1px solid #25a025;
+      text-decoration: none;
+      border-radius: 2px;
+      text-align: center;
+      font-size: 0.9em;
+      transition: all 0.3s;
+      background: transparent;
+    }
+
+    aside#left a:hover, aside#right a:hover {
+      background-color: rgba(37, 160, 37, 0.08);
+      color: #2eb82e;
+      border-color: #2eb82e;
+    }
+
+    h1.top {
+      font-size: 1.1em;
+      color: #d4af37;
+      border-bottom: 1px solid #333;
+      margin-top: 0;
+      padding-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    #slider {
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    #slider_frame {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    #slider_frame img {
+      width: 100%;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid #333;
+      transition: border 0.3s, transform 0.3s;
+      filter: grayscale(30%);
+    }
+    
+    #slider_frame img:hover {
+      filter: grayscale(0%);
+      border-color: #2eb82e;
+      transform: scale(1.05);
+    }
+
+    .bounce-highlight {
+      animation: bounceSmall 0.5s ease-in-out;
+      border: 1px solid #2eb82e !important;
+    }
+
+    @keyframes bounceSmall {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .article-box {
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .article-box h2 {
+      color: #d4af37;
+      margin-top: 0;
+      font-size: 1.3em;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-top: 20px;
+      border: 1px solid #333;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .pdf-description {
+      margin-top: 20px;
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: #bbb;
+    }
+
+    #more-content {
+      display: none;
+      margin-top: 15px;
+      border-top: 1px dashed #333;
+      padding-top: 15px;
+    }
+
+    .more-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      color: #2eb82e;
+      border: 1px solid #2eb82e;
+      background: transparent;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .more-btn:hover {
+      background-color: rgba(46, 184, 46, 0.08);
+    }
+
+    .monograph-box {
+      margin-top: 30px;
+      padding: 25px;
+    }
+
+    .monograph-box h2 {
+      color: #d4af37;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .mono-category {
+      color: #2eb82e;
+      font-weight: bold;
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-size: 1em;
+      border-left: 2px solid #2eb82e;
+      padding-left: 8px;
+    }
+
+    .mono-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    .mono-list li {
+      margin-bottom: 12px;
+      padding: 12px;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 2px;
+    }
+
+    .pdf-badge-btn {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 8px;
+      font-size: 0.75em;
+      color: #d4af37;
+      border: 1px solid #d4af37;
+      background: transparent;
+      text-decoration: none;
+      border-radius: 2px;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
+    .pdf-badge-btn:hover {
+      background-color: rgba(212, 175, 55, 0.15);
+      color: #ffcc00;
+    }
+
+    .mono-list a {
+      color: #25a025;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 6px;
+      word-break: break-all;
+      font-size: 0.85em;
+    }
+
+    .mono-list a:hover {
+      color: #2eb82e;
+      text-decoration: underline;
+    }
+
+    .mono-date {
+      color: #cc8800;
+      font-size: 0.85em;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      color: #555;
+      padding: 30px;
+      margin-top: 50px;
+      border-top: 1px solid #222;
+      font-size: 0.8em;
+    }
+
+    @media (max-width: 768px) {
+      #main {
+        flex-direction: column;
+      }
+      aside#left, #content, aside#right {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #slider_frame {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      nav#top_menu a {
+        padding: 14px 24px;
+        font-size: 1em;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header></header>
+
+<nav id="top_menu">
+  <ul>
+    <li><a href="#Zenodo-Figshare-Monograph">GALLERY</a></li>
+    
+  </ul>
+</nav>
+
+
+<div id="main">
+  <aside id="left">
+    <h1 class="top">Menu</h1>
+    <ul>
+    
+	<li><a href="index.html" class="back-btn">&larr; HOME</a>
+
+      
+    </ul>
+  </aside>
+
+
+
+
+
+
+
+<div id="main">
+  
+
+  <div id="content">
+    <div id="slider">
+      <div id="slider_frame">
+	  
+	  <a href="SEKWENCJA%20GWIAZD(ALL).html">
+    <img src="SEKWENCJA%20GWIAZD/SEKWENCJa.jpg" alt="Graphic 2">
+     </a>
+	       
+		   
+		   
+      <a href="GARERY%20%20Idea%20GrapH.html">
+    <img src="SEKWENCJA%20GWIAZD/Idea%20GrapH.png" alt="Graphic 2">
+     </a>
+	 
+	 
+	 <a href="1creation%20and%20colapse.html">
+    <img src="SEKWENCJA%20GWIAZD/creation%20and%20colapse.png" alt="Graphic 2">
+     </a>
+		
+		<a href="1Finite%20Core%20Collapse%20Model.html">
+    <img src="SEKWENCJA%20GWIAZD/Finite%20Core%20Collapse%20Model.png" alt="Graphic 2">
+     </a>
+		
+	       
+    
+	 
+		
+      </div>
+    </div>
+
+
+    
+        
+		<nav id="top_menu">
+  <ul>
+      
+ <li><a href="GALERy.html" class="back-btn">&larr; GALLERY MENU</a>
+  
+  </ul>
+</nav>
+		
+		
+		
+		
+      
+    </div>
+  </div>
+		
+		
+		
+		
+      
+    </div>
+  
+
+ 
+
+
+<footer>
+     <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
+</footer>
+
+<script>
+  let currentHighlighted = null;
+
+  function highlightImage(imgId) {
+    if (currentHighlighted) {
+      currentHighlighted.classList.remove('bounce-highlight');
+    }
+
+    const img = document.getElementById(imgId);
+    if (!img) return;
+
+    currentHighlighted = img;
+    img.classList.add('bounce-highlight');
+  }
+
+  function unhighlightImage(imgId) {
+    const img = document.getElementById(imgId);
+    if (img && img === currentHighlighted) {
+      img.classList.remove('bounce-highlight');
+      currentHighlighted = null;
+    }
+  }
+
+  function toggleMore() {
+    const moreContent = document.getElementById('more-content');
+    const btnText = document.getElementById('more-btn-text');
+
+    if (moreContent.style.display === 'block') {
+      moreContent.style.display = 'none';
+      btnText.innerText = 'More...';
+    } else {
+      moreContent.style.display = 'block';
+      btnText.innerText = 'Less...';
+    }
+  }
+</script>
+
+</body>
+</html>
