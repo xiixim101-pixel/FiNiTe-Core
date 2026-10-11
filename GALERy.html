@@ -327,7 +327,11 @@
         margin: 0 auto;
       }
     }
-  </style>
+      /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
+    @media (max-width: 768px) {
+      *, *::before, *::after { box-sizing: border-box; }
+    }
+</style>
 </head>
 <body>
 
