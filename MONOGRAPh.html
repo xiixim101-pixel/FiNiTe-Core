@@ -45,7 +45,7 @@
     nav#top_menu a {
       display: block;
       padding: 12px 24px;
-      color: #c7cc33;
+      color: #cc3347;
       border: 1px solid #000;
       text-decoration: none;
       border-radius: 4px;
@@ -267,7 +267,7 @@ aside#left a, aside#right a {
       margin-left: 8px;
       padding: 2px 8px;
       font-size: 0.75em;
-      color: #d4af37;
+      color: #cc3347;
       border: 1px solid #d4af37;
       background: transparent;
       text-decoration: none;
@@ -281,8 +281,27 @@ aside#left a, aside#right a {
       color: #ffcc00;
     }
 
+    /* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
+    .mono-list a.pdf-badge-btn {
+      color: #0d0d0d;
+      background: #cc3347;
+      border: 1px solid #cc3347;
+      font-size: 0.8em;
+      padding: 3px 10px;
+      margin-top: 0;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+    }
+    .mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
+    .mono-list a.pdf-badge-btn:hover {
+      color: #0d0d0d;
+      background: #ff4d63;
+      border-color: #ff4d63;
+      text-decoration: none;
+    }
+
     .mono-list a {
-      color: #25a025;
+      color: #cc3347;
       text-decoration: none;
       display: inline-block;
       margin-top: 6px;
@@ -291,7 +310,7 @@ aside#left a, aside#right a {
     }
 
     .mono-list a:hover {
-      color: #2eb82e;
+      color: #ff4d63;
       text-decoration: underline;
     }
 
@@ -374,7 +393,7 @@ aside#left a, aside#right a {
     <img src="boob2.jpg" alt="Graphic 2">
      </a>
 	       
-               <a href="index.html">
+               <a href="index.html#video-en">
     <img src="boob.jpg" alt="Graphic 2">
      </a>
 	 

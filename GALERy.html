@@ -331,6 +331,16 @@
     @media (max-width: 768px) {
       *, *::before, *::after { box-sizing: border-box; }
     }
+    /* kafelki: 5 sztuk, symetrycznie (3 + 2 wyśrodkowane) */
+    #slider_frame { grid-template-columns: repeat(6, 1fr); }
+    #slider_frame a { grid-column: span 2; }
+    #slider_frame a:nth-child(4) { grid-column: 2 / span 2; }
+    #slider_frame a:nth-child(5) { grid-column: 4 / span 2; }
+    @media (max-width: 768px) {
+      #slider_frame { grid-template-columns: repeat(4, 1fr); }
+      #slider_frame a:nth-child(4) { grid-column: span 2; }
+      #slider_frame a:nth-child(5) { grid-column: 2 / span 2; }
+    }
 </style>
 </head>
 <body>
@@ -383,6 +393,10 @@
     <img src="SEKWENCJA%20GWIAZD/creation%20and%20colapse.png" alt="Graphic 2">
      </a>
 		
+		<a href="15-METER%20CORE(ALL).html">
+    <img src="15%20METER%20CORE/01-15-meter-core.jpg" alt="The 15-Meter Quantum Core">
+     </a>
+
 		<a href="1Finite%20Core%20Collapse%20Model.html">
     <img src="SEKWENCJA%20GWIAZD/Finite%20Core%20Collapse%20Model.png" alt="Graphic 2">
      </a>
