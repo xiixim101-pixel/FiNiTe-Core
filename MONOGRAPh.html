@@ -351,6 +351,11 @@ aside#left a, aside#right a {
     @media (max-width: 768px) {
       *, *::before, *::after { box-sizing: border-box; }
     }
+    .proposal-note {
+      border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
+      padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
+    }
+    .proposal-note strong { color: #cc3347; }
 </style>
 </head>
 <body>
@@ -386,6 +391,7 @@ aside#left a, aside#right a {
   
 
   <div id="content">
+    
     <div id="slider">
       <div id="slider_frame">
 	  
@@ -416,7 +422,7 @@ aside#left a, aside#right a {
     <!-- 1. MONOGRAF ZENODO -->
     <div id="Zenodo-Monograph" class="monograph-box">
       <h2>Zenodo-Monograph </h2>
-      <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | ORCID: 0009-0004-6707-4546 | Zielona Góra, Poland</p>
+      <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | ORCID: 0009-0004-6707-4546 </p>
 
       <div class="mono-category">I. Foundation</div>
       <ul class="mono-list">
@@ -618,7 +624,7 @@ aside#left a, aside#right a {
         <li>
           <strong>The Creation & Collapse Mechanism of the Universe – Cosmic Hourglass </strong>
 		  		   
-<a href="index.html" class="pdf-badge-btn">[VIDEO]</a>
+<a href="index.html#video-en" class="pdf-badge-btn">[VIDEO]</a>
           <br><span class="mono-date">Creation: 07.10.2026  </span>
           <a href="https://doi.org/10.6084/m9.figshare.34157148" target="_blank">DOI: 10.6084/m9.figshare.34157148</a>
         </li>
@@ -650,6 +656,7 @@ aside#left a, aside#right a {
 
 <footer>
      <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
+	  <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
 </footer>
 
 <script>
