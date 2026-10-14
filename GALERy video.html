@@ -1,16 +1,20 @@
-      
-	  
-	 <!DOCTYPE html>
-	 <html lang="en">
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Galleryy Video - Marcin Słowik</title>
-     <meta name="description" content="Galleryy Video - Marcin Słowik.">
-     <link rel="icon" type="image/png" href="logo3.png">
-     <style>
-	 
-     body {
+    
+	
+	<!DOCTYPE html>
+	
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmological Projects - Marcin Słowik</title>
+    <meta name="description" content="Cosmological Projects - Marcin Słowik.">
+    <link rel="icon" type="image/png" href="logo3.png">
+    <style>
+	
+    html { scroll-behavior: smooth; }
+    #video-en { scroll-margin-top: 20px; }
+
+    body {
       margin: 0;
       font-family: 'Courier New', Courier, monospace;
       background-color: #0d0d0d;
@@ -18,25 +22,6 @@
       background-image: radial-gradient(#151515 1px, transparent 1px);
       background-size: 20px 20px;
       scroll-behavior: smooth;
-    }
-	
-    .back-btn {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      color: #cc3347;
-      border: 1px solid #2eb82e;
-      text-decoration: none;
-      border-radius: 3px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 0.3s;
-    }
-
-    .back-btn:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-    }
-	
     }
 
     header {
@@ -53,7 +38,6 @@
       padding: 15px;
     }
 
-
     nav#top_menu ul {
       display: flex;
       flex-wrap: wrap;
@@ -67,8 +51,8 @@
     nav#top_menu a {
       display: block;
       padding: 12px 24px;
-      color: #cc3347;
-      border: 1px solid #000;
+      color: #2eb82e;
+      border: 1px solid #2eb82e;
       text-decoration: none;
       border-radius: 4px;
       font-weight: bold;
@@ -117,7 +101,7 @@
       margin: 10px 0;
     }
 
-      aside#left a, aside#right a {
+    aside#left a, aside#right a {
       display: block;
       padding: 10px;
       color: #cc3347;
@@ -184,7 +168,7 @@
     }
 
     .article-box {
-      padding: 25px;
+      padding: 100px;
       margin-bottom: 25px;
     }
 
@@ -270,6 +254,23 @@
       padding-left: 8px;
     }
 
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      color: #cc3347;
+      border: 1px solid #2eb82e;
+      text-decoration: none;
+      border-radius: 3px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+
+
+
+
     .mono-list {
       list-style: none;
       padding: 0;
@@ -289,7 +290,7 @@
       margin-left: 8px;
       padding: 2px 8px;
       font-size: 0.75em;
-      color: #cc3347;
+      color: #d4af37;
       border: 1px solid #d4af37;
       background: transparent;
       text-decoration: none;
@@ -303,27 +304,8 @@
       color: #ffcc00;
     }
 
-    /* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
-    .mono-list a.pdf-badge-btn {
-      color: #0d0d0d;
-      background: #cc3347;
-      border: 1px solid #cc3347;
-      font-size: 0.8em;
-      padding: 3px 10px;
-      margin-top: 0;
-      border-radius: 3px;
-      letter-spacing: 0.5px;
-    }
-    .mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
-    .mono-list a.pdf-badge-btn:hover {
-      color: #0d0d0d;
-      background: #ff4d63;
-      border-color: #ff4d63;
-      text-decoration: none;
-    }
-
     .mono-list a {
-      color: #cc3347;
+      color: #25a025;
       text-decoration: none;
       display: inline-block;
       margin-top: 6px;
@@ -331,34 +313,8 @@
       font-size: 0.85em;
     }
 
-
-   .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      margin-top: 20px;
-      border: 1px solid #333;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-
-    .article-box {
-      padding: 1px;
-      margin-bottom: 1px;
-    }
-
-
     .mono-list a:hover {
-      color: #ff4d63;
+      color: #2eb82e;
       text-decoration: underline;
     }
 
@@ -399,91 +355,108 @@
     @media (max-width: 768px) {
       *, *::before, *::after { box-sizing: border-box; }
     }
-    .proposal-note {
+     .proposal-note {
       border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
       padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
     }
     .proposal-note strong { color: #cc3347; }
-	
-     </style>
-     </head>
-     <body>
+    </style>
+    </head>
+    <body>
 
-     <header></header>
+    <header></header>
 
-     <nav id="top_menu">
-        <img src="logo3.png" alt="Logo">
-     </nav>
+    <nav id="top_menu">
+    <img src="logo3.png" alt="Logo">
+    </nav>
 
-     <div id="main">
-        <aside id="left">
-        <h1 class="top">VIDEO GALLERY MENU</h1>
-   <ul>
-	    <li><a href="index.html">&larr; HOME</a></li>
-		<li><a href="GALERy.html">PHOTO GALLERY MENU</a></li>
-	 
+    <div id="main">
+    <aside id="left">
+    <h1 class="top">VIDEO GALLERY MENU</h1>
+    <ul>
+      <li><a href="index.html">&larr; HOME</a></li>
+	  <li><a href="GALERy.html">PHOTO GALLERY MENU</a></li>
+	  
     </ul>
-	
     </aside>
 
-  
-
-     <div class="box" id="GALLERY">
-  
-    <div id="slider">
-      <div id="slider_frame">
+    <div id="content">
+      <div id="slider">
+    <div id="slider_frame">
 	  
+    <a href="MONOGRAPh.html">
+      <img src="boob2.jpg" alt="Graphic 1">
+    </a>
+	       
+    <a href="#video-en">
+      <img src="boob.jpg" alt="Finite Core Video Series">
+    </a>
+	 
+    <a href="#Package Formula-video-en">
+      <img src="boob1.jpg" alt="Package Formula Video Series">
+    </a>                            
+
+    <a href="GALERy.html">
+      <img src="boob3.png" alt="Graphic 4">
+   	</a>
+		
+      </div>
+    </div>
+
     <div class="article-box" id="video-en">
-      <p><strong>1.Creation,Collapse</strong>
-     
+      <h2>1-Creation & Collapse Mechanism </h2>
+    
+      
+      
      <div class="video-container">
        <iframe src="https://www.youtube.com/embed/3nt7BF8HH9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
        </iframe>
      </div>
      
-     <p><strong>Kreacja,Kolaps</strong>
+	  
+	
+      <h2>Mechanizm Kreacji,Kolapsu</h2>
+    
 
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/lKBjcGXGXUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
     </div>
 
-	 </div>
+    </div>
   
-    <div class="article-box" id="Package Formula-video">
-      <p><strong>2.Package Formula</strong>
-
+    <div class="article-box" id="Package Formula-video-en">
+      <h2>2-The Package Formula</h2>
+    
+      
+      
      <div class="video-container">
         <iframe src="https://www.youtube.com/embed/6THPysAA6mg?si=_tE6E392U9O78w68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
       </div>
- 
-      <p><strong>Wzór Paczkowy</strong>
 
-     <div class="video-container">
+	  
+      <h2>Wzór Paczkowy</h2>
+
+      <div class="video-container">
         <iframe src="https://www.youtube.com/embed/3Q7_FaHa6m0?si=O0pmVCEo3lK6NFsD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </iframe>
-     </div>
-	 </div>
+      </div>
 	
+
+	<div id="1main">
+       <a href="GALERy video.html" class="back-btn">&larr; VIDEO GALLERY MENU</a>
     </div>
 
-		
-	 
-     </div>
- 
-     </div>
-    </div>
-   
-    </div>
-  
-    <footer>
-         <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
-		    <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
-    </footer>
 
-    <script>
-    let currentHighlighted = null;
+     <footer>
+        <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
+     <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+     
+	 </footer>
+
+     <script>
+     let currentHighlighted = null;
 
     function highlightImage(imgId) {
     if (currentHighlighted) {
@@ -521,11 +494,3 @@
 
     </body>
     </html>
-
-
-
-
-
-
-    
-        
