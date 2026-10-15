@@ -1,686 +1,671 @@
-    
-	
-   	<!DOCTYPE html>
-	
-     <html lang="en">
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Cosmological Projects - Marcin Słowik</title>
-     <meta name="description" content="Monograph by Marcin Słowik on the Finite Core model: Zenodo and Figshare publications with DOI.">
-     <link rel="icon" type="image/png" href="logo3.png">
-     <style>
-	 
-      body {
-      margin: 0;
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #0d0d0d;
-      color: #ccc;
-      background-image: radial-gradient(#151515 1px, transparent 1px);
-      background-size: 20px 20px;
-      scroll-behavior: smooth;
-    }
-	
-    .back-btn {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      color: #cc3347;
-      border: 1px solid #2eb82e;
-      text-decoration: none;
-      border-radius: 3px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 0.3s;
-    }
-
-    .back-btn:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-    }
-	
-    }
-
-    header {
-      height: 30px;
-      background: #000;
-      border-bottom: 1px solid #cc3347;
-    }
-
-    nav#top_menu {
-      background: #000;
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid #cc3347;
-      padding: 15px;
-    }
 
 
-    nav#top_menu ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      justify-content: center;
-    }
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MONOGRAPH</title>
+   <meta name="description" content="MONOGRAPH - Marcin Słowik..">
+   <link rel="icon" type="image/png" href="logo3.png">
+   <style>
 
-    nav#top_menu a {
-      display: block;
-      padding: 12px 24px;
-      color: #cc3347;
-      border: 1px solid #000;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.1px;
-      transition: all 0.3s ease;
-      background: transparent;
-    }
+  body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d0d0d;
+  color: #ccc;
+  background-image: radial-gradient(#151515 1px, transparent 1px);
+  background-size: 20px 20px;
+  scroll-behavior: smooth;
+}
 
-    nav#top_menu a:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-      color: #33cc33;
-      border-color: #33cc33;
-    }
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: #cc3347;
+  border: 1px solid #2eb82e;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
 
-    #main {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      gap: 20px;
-      padding: 0 15px;
-    }
+.back-btn:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+}
 
-    aside#left, aside#right, .article-box, #slider, .monograph-box {
-      background: #141414;
-      border: 1px solid #2c2c2c;
-      border-radius: 3px;
-    }
+header {
+  height: 30px;
+  background: #000;
+  border-bottom: 1px solid #cc3347;
+}
 
-    aside#left, aside#right {
-      width: 22%;
-      padding: 20px;
-    }
+nav#top_menu {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #cc3347;
+  padding: 15px;
+}
 
-    #content {
-      width: 56%;
-    }
+nav#top_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
 
-    aside#left ul, aside#right ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0 0;
-    }
+nav#top_menu a {
+  display: block;
+  padding: 12px 24px;
+  color: #cc3347;
+  border: 1px solid #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
 
-    aside#left li, aside#right li {
-      margin: 10px 0;
-    }
+nav#top_menu a:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+  color: #33cc33;
+  border-color: #33cc33;
+}
 
-      aside#left a, aside#right a {
-      display: block;
-      padding: 10px;
-      color: #cc3347;
-      border: 1px solid #25a025;
-      text-decoration: none;
-      border-radius: 2px;
-      text-align: center;
-      font-size: 0.9em;
-      transition: all 0.3s;
-      background: transparent;
-    }
+#main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 0 15px;
+}
 
-    aside#left a:hover, aside#right a:hover {
-      background-color: rgba(37, 160, 37, 0.08);
-      color: #2eb82e;
-      border-color: #2eb82e;
-    }
+aside#left, aside#right, .article-box, #slider, .monograph-box {
+  background: #141414;
+  border: 1px solid #2c2c2c;
+  border-radius: 3px;
+}
 
-    h1.top {
-      font-size: 1.1em;
-      color: #d4af37;
-      border-bottom: 1px solid #333;
-      margin-top: 0;
-      padding-bottom: 10px;
-      text-align: center;
-      text-transform: uppercase;
-    }
+aside#left, aside#right {
+  width: 22%;
+  padding: 20px;
+}
 
-    #slider {
-      padding: 15px;
-      margin-bottom: 20px;
-    }
+#content {
+  width: 56%;
+}
 
-    #slider_frame {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
+aside#left ul, aside#right ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
 
-    #slider_frame img {
-      width: 100%;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 2px;
-      border: 1px solid #333;
-      transition: border 0.3s, transform 0.3s;
-      filter: grayscale(30%);
-    }
-    
-    #slider_frame img:hover {
-      filter: grayscale(0%);
-      border-color: #2eb82e;
-      transform: scale(1.05);
-    }
+aside#left li, aside#right li {
+  margin: 10px 0;
+}
 
-    .bounce-highlight {
-      animation: bounceSmall 0.5s ease-in-out;
-      border: 1px solid #2eb82e !important;
-    }
+aside#left a, aside#right a {
+  display: block;
+  padding: 10px;
+  border: 1px solid #25a025;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.9em;
+  transition: all 0.3s;
+  background: transparent;
+}
 
-    @keyframes bounceSmall {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
-    }
+/* Styl dla listy po lewej: HOME taki sam jak .back-btn, reszta na biało */
+aside#left li:first-child a {
+  color: #cc3347;
+}
 
-    .article-box {
-      padding: 25px;
-      margin-bottom: 25px;
-    }
+aside#left li:not(:first-child) a {
+  color: #ffffff;
+}
 
-    .article-box h2 {
-      color: #d4af37;
-      margin-top: 0;
-      font-size: 1.3em;
-    }
+aside#left a:hover, aside#right a:hover {
+  background-color: rgba(37, 160, 37, 0.08);
+  color: #2eb82e;
+  border-color: #2eb82e;
+}
 
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      margin-top: 20px;
-      border: 1px solid #333;
-    }
+h1.top {
+  font-size: 1.1em;
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+#slider {
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
-    .pdf-description {
-      margin-top: 20px;
-      font-size: 0.9em;
-      line-height: 1.6;
-      color: #bbb;
-    }
+#slider_frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 
-    #more-content {
-      display: none;
-      margin-top: 15px;
-      border-top: 1px dashed #333;
-      padding-top: 15px;
-    }
+#slider_frame img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #333;
+  transition: border 0.3s, transform 0.3s;
+  filter: grayscale(30%);
+}
 
-    .more-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 8px 16px;
-      color: #2eb82e;
-      border: 1px solid #2eb82e;
-      background: transparent;
-      border-radius: 3px;
-      cursor: pointer;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-    }
+#slider_frame img:hover {
+  filter: grayscale(0%);
+  border-color: #2eb82e;
+  transform: scale(1.05);
+}
 
-    .more-btn:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-    }
+.bounce-highlight {
+  animation: bounceSmall 0.5s ease-in-out;
+  border: 1px solid #2eb82e !important;
+}
 
-    .monograph-box {
-      margin-top: 30px;
-      padding: 25px;
-    }
+@keyframes bounceSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
 
-    .monograph-box h2 {
-      color: #d4af37;
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: 0;
-      border-bottom: 1px solid #333;
-      padding-bottom: 10px;
-      font-size: 1.2em;
-    }
+.article-box {
+  padding: 25px;
+  margin-bottom: 25px;
+}
 
-    .mono-category {
-      color: #2eb82e;
-      font-weight: bold;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-size: 1em;
-      border-left: 2px solid #2eb82e;
-      padding-left: 8px;
-    }
+.article-box h2 {
+  color: #d4af37;
+  margin-top: 0;
+  font-size: 1.3em;
+}
 
-    .mono-list {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0;
-    }
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+  border: 1px solid #333;
+}
 
-    .mono-list li {
-      margin-bottom: 12px;
-      padding: 12px;
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 2px;
-    }
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-    .pdf-badge-btn {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 2px 8px;
-      font-size: 0.75em;
-      color: #cc3347;
-      border: 1px solid #d4af37;
-      background: transparent;
-      text-decoration: none;
-      border-radius: 2px;
-      font-weight: bold;
-      transition: all 0.2s;
-    }
+.pdf-description {
+  margin-top: 20px;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #bbb;
+}
 
-    .pdf-badge-btn:hover {
-      background-color: rgba(212, 175, 55, 0.15);
-      color: #ffcc00;
-    }
+#more-content {
+  display: none;
+  margin-top: 15px;
+  border-top: 1px dashed #333;
+  padding-top: 15px;
+}
 
-    /* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
-    .mono-list a.pdf-badge-btn {
-      color: #0d0d0d;
-      background: #cc3347;
-      border: 1px solid #cc3347;
-      font-size: 0.8em;
-      padding: 3px 10px;
-      margin-top: 0;
-      border-radius: 3px;
-      letter-spacing: 0.5px;
-    }
-    .mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
-    .mono-list a.pdf-badge-btn:hover {
-      color: #0d0d0d;
-      background: #ff4d63;
-      border-color: #ff4d63;
-      text-decoration: none;
-    }
+.more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  color: #2eb82e;
+  border: 1px solid #2eb82e;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
 
-    .mono-list a {
-      color: #cc3347;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 6px;
-      word-break: break-all;
-      font-size: 0.85em;
-    }
+.more-btn:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+}
 
-    .mono-list a:hover {
-      color: #ff4d63;
-      text-decoration: underline;
-    }
+.monograph-box {
+  margin-top: 30px;
+  padding: 25px;
+}
 
-    .mono-date {
-      color: #cc8800;
-      font-size: 0.85em;
-    }
+.monograph-box h2 {
+  color: #d4af37;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
 
-    footer {
-      background: #000;
-      text-align: center;
-      color: #555;
-      padding: 30px;
-      margin-top: 50px;
-      border-top: 1px solid #222;
-      font-size: 0.8em;
-    }
+.mono-category {
+  color: #2eb82e;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-left: 2px solid #2eb82e;
+  padding-left: 8px;
+}
 
-    @media (max-width: 768px) {
-      #main {
-        flex-direction: column;
-      }
-      aside#left, #content, aside#right {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      #slider_frame {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      nav#top_menu a {
-        padding: 14px 24px;
-        font-size: 1em;
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
-      /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
-    @media (max-width: 768px) {
-      *, *::before, *::after { box-sizing: border-box; }
-    }
-    .proposal-note {
-      border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
-      padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
-    }
-    .proposal-note strong { color: #cc3347; }
-	
-	
-     </style>
-     </head>
-     <body>
+.mono-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
 
-     <header></header>
+.mono-list li {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 2px;
+}
 
-     <nav id="top_menu">
-	  <img src="logo3.png" alt="Logo">
-     </nav>
+.pdf-badge-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  color: #cc3347;
+  border: 1px solid #d4af37;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
 
-    </nav>
+.pdf-badge-btn:hover {
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #ffcc00;
+}
 
-    <div id="main">
-	
-    <aside id="left">
-	
-    <h1 class="top">Monograph Menu</h1>
-	
-    
-	 <ul>
-	     <li><a href="index.html" class="back-btn">&larr; HOME</a>
-	     <li><a href="#Zenodo-Monograph">ZENODO-Monograph</a></li>
-         <li><a href="#figshare-monograph">FIGSHARE-Monograph</a></li>
-     </ul>
-	 
-     </aside>
+/* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
+.mono-list a.pdf-badge-btn {
+  color: #0d0d0d;
+  background: #cc3347;
+  border: 1px solid #cc3347;
+  font-size: 0.8em;
+  padding: 3px 10px;
+  margin-top: 0;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+.mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
+.mono-list a.pdf-badge-btn:hover {
+  color: #0d0d0d;
+  background: #ff4d63;
+  border-color: #ff4d63;
+  text-decoration: none;
+}
+
+.mono-list a {
+  color: #cc3347;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  word-break: break-all;
+  font-size: 0.85em;
+}
+
+.mono-list a:hover {
+  color: #ff4d63;
+  text-decoration: underline;
+}
+
+.mono-date {
+  color: #cc8800;
+  font-size: 0.85em;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  color: #555;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+  }
+  aside#left, #content, aside#right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #slider_frame {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav#top_menu a {
+    padding: 14px 24px;
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+  /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
+@media (max-width: 768px) {
+  *, *::before, *::after { box-sizing: border-box; }
+}
+.proposal-note {
+  border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
+  padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
+}
+.proposal-note strong { color: #cc3347; }
 
 
+</style>
+</head>
+<body>
 
-     <div id="main">
+<header></header>
+
+<nav id="top_menu">
+ <img src="logo3.png" alt="Logo">
+</nav>
+
+<div id="main">
+
+<aside id="left">
+
+<h1 class="top">MONOGRAPH</h1>
+
+ <ul>
+   <li><a href="index.html" class="back-btn">&larr; HOME</a></li>
+   <li><a href="#Zenodo-Monograph">ZENODO-Monograph</a></li>
+   <li><a href="#figshare-monograph">FIGSHARE-Monograph</a></li>
+ </ul>
+ 
+</aside>
+
+<div id="content">
+ 
+ <div id="slider">
+ <div id="slider_frame">
   
-
-     <div id="content">
-    
-     <div id="slider">
-     <div id="slider_frame">
-	  
-	 <a href="#Zenodo-Monograph">
-        <img src="boob2.jpg" alt="Graphic 2">
-     </a>
-	       
-    <a href="index.html#video-en">
-       <img src="boob.jpg" alt="Graphic 2">
-    </a>
-	 
-     <a href="index.html#Package Formula-video-en">
-        <img src="boob1.jpg" alt="Package Formula Video Series">
-     </a>                            
-
-     <a href="GALERy.html">
-        <img src="boob3.png" alt="Graphic 4">
-     </a>
-		
-    </div>
-    </div>
-
-
-    <!-- 1. MONOGRAF ZENODO -->
-	
-    <div id="Zenodo-Monograph" class="monograph-box">
-	
-    <h2>Zenodo-Monograph </h2>
-	  
-    <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | ORCID: 0009-0004-6707-4546 </p>
-
-    <div class="mono-category">I. Foundation</div>
-	
-    <ul class="mono-list">
-	  
-    <li>
-        1. Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition <span class="mono-date">| 11.07.2026</span>
-        <a href="1%20FOTKA%201%20pozycji%20ZANADO.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.21314918" target="_blank">DOI: 10.5281/zenodo.21314918</a>
-    </li>
-	 
-    </ul>
-
-    <div class="mono-category">II. Package Formula & Critical Mass</div>
-	
-    <ul class="mono-list">
-	  
-    <li>
-        2.  Microscopic Quantum Mechanisms of Stabilization / Mikroskopowe kwantowe mechanizmy stabilizacji <span class="mono-date">| 27.07.2026</span>
-        <a href="2%20pdf-microscopic-mechanisms.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://zenodo.org/records/21624309" target="_blank">DOI: 10.5281/zenodo.21624309</a>
-    </li>
-   	
-    <li>
-         3. Package Formula for Schwarzschild Radius <span class="mono-date">| 27.07.2026</span>
-         <a href="3%20pdf-Package%20Formula%20for%20Schwarzschild%20Radius.html" class="pdf-badge-btn">[PNG]</a>
-         <br><a href="https://doi.org/10.5281/zenodo.21625028" target="_blank">DOI: 10.5281/zenodo.21625028</a>
-    </li>
-			
-    <li>
-         4. Package Formula: Hexagonal Structure and Periodic Table of Black Holes <span class="mono-date">| 27.07.2026</span>
-         <a href="4.%20Package%20Formula%20Hexagonal%20Structure%20and%20Periodic%20Table%20of%20Black%20Holes.html" class="pdf-badge-btn">[PNG]</a>
-         <br><a href="https://doi.org/10.5281/zenodo.21625386" target="_blank">DOI: 10.5281/zenodo.21625386</a>
-    </li>
-	
-     <li>
-         5. Hypothesis of Dynamic Synthesis and Rejection of Excess Mass (Slowik Phenomenon) <span class="mono-date">| 27.07.2026</span>
-         <a href="5.%20Hypothesis%20of%20Dynamic%20Synthesis%20and%20Rejection%20of%20Excess%20Mass.html" class="pdf-badge-btn">[PNG]</a>
-         <br><a href="https://doi.org/10.5281/zenodo.21625199" target="_blank">DOI: 10.5281/zenodo.21625199</a>
-     </li>
-  
-     <li>
-        6. Calculation of Schwarzschild Radius and Package Method <span class="mono-date">| 28.07.2026</span>
-        <a href="6%20Calculation%20of%20Schwarzschild%20Radius%20and%20Package%20Method.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.21651625" target="_blank">DOI: 10.5281/zenodo.21651625</a>
-    </li>
-		
-    <li>
-        7. Microscopic Quantum Mechanisms of Stabilization of Relativistic Electroweak Objects 2.8 Msun <span class="mono-date">| 06.08.2026</span>
-        <a href="7%20pdf-microscopic-mechanisms-2.8msun.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://zenodo.org/records/21827082" target="_blank">DOI: 10.5281/zenodo.21827082</a>
-    </li>
-
-
-    </ul>
-       <div class="mono-category">III. </div>
-	<ul class="mono-list">
-	 
-     <li>
-        8. Mechanism (of Creation) - Creation Forward <span class="mono-date">| 28.08.2026</span>
-        <a href="8.%20Mechanism%20(of%20Creation)%20-%20Creation%20Forward.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.22150756" target="_blank">DOI: 10.5281/zenodo.22150756</a>
-    </li>
-	
-    <li>
-        9. Mechanism (of Creation) - Creation (Reverse Gravity) <span class="mono-date">| 31.08.2026</span>
-        <a href="9.%20Mechanism%20(of%20Creation)%20-%20Creation%20(Reverse%20Gravity).html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.22214662" target="_blank">DOI: 10.5281/zenodo.22214662</a>
-    </li>
-	
-    <li>
-        10. Creation Live Forward - (Reverse Gravity) mechanism <span class="mono-date">| 01.09.2026</span>
-        <a href="10.%20Creation%20Live%20Forward%20-%20(Reverse%20Gravity)%20mechanism.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.22229917" target="_blank">DOI: 10.5281/zenodo.22229917</a>
-    </li>
-	
-    </ul>
-	 
-    <div class="mono-category">IV. Extensions</div>
-	
-    <ul class="mono-list">
-        
+ <a href="#Zenodo-Monograph">
+    <img src="boob2.jpg" alt="Graphic 2">
+ </a>
        
-     <li>
-         11. Magnetism as Energy in the Tree Trunk - Finite-Core Dynamo Hypothesis <span class="mono-date">| 15.09.2026</span>
-         <a href="11.%20Magnetism%20as%20Energy%20in%20the%20Tree%20Trunk.html" class="pdf-badge-btn">[PNG]</a>
-         <br><a href="https://doi.org/10.5281/zenodo.22764118" target="_blank">DOI: 10.5281/zenodo.22764118</a>
-     </li>
-	 
-     <li>
-        12. Time is the Sequence Itself - Formula 5+1+5 <span class="mono-date">| 15.09.2026</span>
-        <a href="12.%20Time%20is%20the%20Sequence%20Itself%20-%20Formula%205%2B1%2B5.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.22765953" target="_blank">DOI: 10.5281/zenodo.22765953</a>
-     </li>
-	 
-    <li>
-        13. Idea Graph<span class="mono-date">| 15.09.2026</span>
-        <a href="13.%20Idea%20GrapH%20PNG.html" class="pdf-badge-btn">[PNG]</a>
-        <br><a href="https://doi.org/10.5281/zenodo.22890511" target="_blank">DOI: 10.5281/zenodo.22890511</a>
-    </li>
-		
-		
-    </ul>
-	
-    </div>
-
-  
-	
-    <div id="1main">
-       <a href="MONOGRAPh.html" class="back-btn">&larr; MONOGRAPH MENU</a>
-    </div>
-		
-
-
-
-
-    <!-- 2. MONOGRAF FIGSHARE -->
-	
-    <div id="figshare-monograph" class="monograph-box">
-    <h2>Figshare Monograph </h2>
-    <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | Repository: Figshare</p>
-
-    <ul class="mono-list">
-	  
-    <li>
-       <strong>Gravitational Compression and Microscopic Core Closure:   Mechanical Squeezing Formulation</strong>
-	   <a href="A%20Gravitational%20Compression%20and%20Microscopic%20Core%20Closure.html" class="pdf-badge-btn">[PNG]</a>
-       <br><span class="mono-date">Creation: 04.10.2026</span>
-       <a href="https://doi.org/10.6084/m9.figshare.34063842" target="_blank">DOI: 10.6084/m9.figshare.34063842</a>
-     </li>
-	  
-     <li>
-        <strong>The Slowik Hypothesis of Gravitational Collapse Stabilization: A Comprehensive Monograph</strong>
-	    <a href="B%20The%20Slowik%20Hypothesis%20of%20Gravitational%20Collapse%20Stabilization.html" class="pdf-badge-btn">[PNG]</a>
-        <br><span class="mono-date">Creation: 04.10.2026</span>
-        <a href="https://doi.org/10.6084/m9.figshare.34065471" target="_blank">DOI: 10.6084/m9.figshare.34065471</a>
-     </li>
-	  
-     <li>
-        <strong>Time as a Sequence of Transitions and Mass Regulation Mechanism: From Hydrogen Cloud to Proton Star</strong>
-	    <a href="C%20Time%20as%20a%20Sequence%20of%20Transitions%20and%20Mass%20Regulation.html" class="pdf-badge-btn">[PNG]</a>
-        <br><span class="mono-date">Creation: 04.10.2026</span>
-        <a href="https://doi.org/10.6084/m9.figshare.34065564" target="_blank">DOI: 10.6084/m9.figshare.34065564</a>
-    </li>
-	  
-    <li>
-       <strong>On the Dynamic Nature of Time and the Elimination of Event Horizons: The "Proton Star" Hypothesis</strong>
-	   <a href="D%20On%20the%20Dynamic%20Nature%20of%20Time%20and%20the%20Elimination%20of%20Event.html" class="pdf-badge-btn">[PNG]</a>
-       <br><span class="mono-date">Creation: 04.10.2026 </span>
-       <a href="https://doi.org/10.6084/m9.figshare.34065594" target="_blank">DOI: 10.6084/m9.figshare.34065594</a>
-    </li>
-
-	<li>
-       <strong>Creation and Collapse Mechanism: Forward and Reverse Pathways PNG</strong>
-	   <a href="E%20Creation%20and%20Collapse%20Mechanism%20Forward%20and%20Reverse%20Pathways.html" class="pdf-badge-btn">[PNG]</a>
-       <br><span class="mono-date">Creation Date: 05.10.2026 </span>
-       <a href="https://doi.org/10.6084/m9.figshare.34069377" target="_blank">DOI: 10.6084/m9.figshare.34069377</a>
-    </li>
+ <a href="index.html#video-en">
+    <img src="boob.jpg" alt="Graphic 2">
+ </a>
  
-    <li>
-       <strong>Finite-Core Collapse Model PNG</strong>
-    	 <a href="F%20Finite-Core%20Collapse%20Model.html" class="pdf-badge-btn">[PNG]</a>
-        <br><span class="mono-date">Creation: 06.10.2026 </span>
-       <a href="https://doi.org/10.6084/m9.figshare.34079730" target="_blank">DOI: 10.6084/m9.figshare.34079730</a>
-    </li>
+  <a href="index.html#Package Formula-video-en">
+     <img src="boob1.jpg" alt="Package Formula Video Series">
+  </a>                        
 
-     <li>
-        <strong>The Creation & Collapse Mechanism of the Universe – Cosmic Hourglass </strong>
-	    <a href="index.html#video-en" class="pdf-badge-btn">[VIDEO]</a>
-        <br><span class="mono-date">Creation: 07.10.2026  </span>
-        <a href="https://doi.org/10.6084/m9.figshare.34157148" target="_blank">DOI: 10.6084/m9.figshare.34157148</a>
-     </li>
+  <a href="GALERy.html">
+     <img src="boob3.png" alt="Graphic 4">
+  </a>
+  
+ </div>
+ </div>
 
-        
-		
-    </ul>
-	
-	
-	
-    </div>
-	
-	<div id="1main">
-       <a href="MONOGRAPh.html" class="back-btn">&larr; MONOGRAPH MENU</a>
-    </div>
+
+ <!-- 1. MONOGRAF ZENODO -->
+
+ <div id="Zenodo-Monograph" class="monograph-box">
+
+ <h2>Zenodo-Monograph </h2>
+  
+ <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | ORCID: 0009-0004-6707-4546 </p>
+
+ <div class="mono-category">I. Foundation</div>
+ 
+ <ul class="mono-list">
+  
+ <li>
+     1. Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition <span class="mono-date">| 11.07.2026</span>
+     <a href="1%20FOTKA%201%20pozycji%20ZANADO.html" class="pdf-badge-btn">[PNG]</a>
+     <br><a href="https://doi.org/10.5281/zenodo.21314918" target="_blank">DOI: 10.5281/zenodo.21314918</a>
+ </li>
+ 
+ </ul>
+
+ <div class="mono-category">II. Package Formula & Critical Mass</div>
+ 
+ <ul class="mono-list">
+  
+ <li>
+     2.  Microscopic Quantum Mechanisms of Stabilization / Mikroskopowe kwantowe mechanizmy stabilizacji <span class="mono-date">| 27.07.2026</span>
+     <a href="2%20pdf-microscopic-mechanisms.html" class="pdf-badge-btn">[PNG]</a>
+     <br><a href="https://zenodo.org/records/21624309" target="_blank">DOI: 10.5281/zenodo.21624309</a>
+ </li>
+  
+ <li>
+      3. Package Formula for Schwarzschild Radius <span class="mono-date">| 27.07.2026</span>
+      <a href="3%20pdf-Package%20Formula%20for%20Schwarzschild%20Radius.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.21625028" target="_blank">DOI: 10.5281/zenodo.21625028</a>
+ </li>
+   
+ <li>
+      4. Package Formula: Hexagonal Structure and Periodic Table of Black Holes <span class="mono-date">| 27.07.2026</span>
+      <a href="4.%20Package%20Formula%20Hexagonal%20Structure%20and%20Periodic%20Table%20of%20Black%20Holes.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.21625386" target="_blank">DOI: 10.5281/zenodo.21625386</a>
+ </li>
+ 
+  <li>
+      5. Hypothesis of Dynamic Synthesis and Rejection of Excess Mass (Slowik Phenomenon) <span class="mono-date">| 27.07.2026</span>
+      <a href="5.%20Hypothesis%20of%20Dynamic%20Synthesis%20and%20Rejection%20of%20Excess%20Mass.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.21625199" target="_blank">DOI: 10.5281/zenodo.21625199</a>
+   </li>
+  
+   <li>
+      6. Calculation of Schwarzschild Radius and Package Method <span class="mono-date">| 28.07.2026</span>
+      <a href="6%20Calculation%20of%20Schwarzschild%20Radius%20and%20Package%20Method.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.21651625" target="_blank">DOI: 10.5281/zenodo.21651625</a>
+ </li>
+  
+ <li>
+     7. Microscopic Quantum Mechanisms of Stabilization of Relativistic Electroweak Objects 2.8 Msun <span class="mono-date">| 06.08.2026</span>
+     <a href="7%20pdf-microscopic-mechanisms-2.8msun.html" class="pdf-badge-btn">[PNG]</a>
+     <br><a href="https://zenodo.org/records/21827082" target="_blank">DOI: 10.5281/zenodo.21827082</a>
+ </li>
+
+
+ </ul>
+    <div class="mono-category">III. </div>
+<ul class="mono-list">
+ 
+  <li>
+      8. Mechanism (of Creation) - Creation Forward <span class="mono-date">| 28.08.2026</span>
+      <a href="8.%20Mechanism%20(of%20Creation)%20-%20Creation%20Forward.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22150756" target="_blank">DOI: 10.5281/zenodo.22150756</a>
+ </li>
+ 
+ <li>
+      9. Mechanism (of Creation) - Creation (Reverse Gravity) <span class="mono-date">| 31.08.2026</span>
+      <a href="9.%20Mechanism%20(of%20Creation)%20-%20Creation%20(Reverse%20Gravity).html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22214662" target="_blank">DOI: 10.5281/zenodo.22214662</a>
+ </li>
+ 
+ <li>
+      10. Creation Live Forward - (Reverse Gravity) mechanism <span class="mono-date">| 01.09.2026</span>
+      <a href="10.%20Creation%20Live%20Forward%20-%20(Reverse%20Gravity)%20mechanism.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22229917" target="_blank">DOI: 10.5281/zenodo.22229917</a>
+ </li>
+ 
+ </ul>
+ 
+ <div class="mono-category">IV. Extensions</div>
+ 
+ <ul class="mono-list">
+     
     
-	
-    </div>
-		
-	
-	</div>
-      
-    </div>
+   <li>
+      11. Magnetism as Energy in the Tree Trunk - Finite-Core Dynamo Hypothesis <span class="mono-date">| 15.09.2026</span>
+      <a href="11.%20Magnetism%20as%20Energy%20in%20the%20Tree%20Trunk.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22764118" target="_blank">DOI: 10.5281/zenodo.22764118</a>
+   </li>
+ 
+   <li>
+      12. Time is the Sequence Itself - Formula 5+1+5 <span class="mono-date">| 15.09.2026</span>
+      <a href="12.%20Time%20is%20the%20Sequence%20Itself%20-%20Formula%205%2B1%2B5.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22765953" target="_blank">DOI: 10.5281/zenodo.22765953</a>
+   </li>
+ 
+ <li>
+      13. Idea Graph<span class="mono-date">| 15.09.2026</span>
+      <a href="13.%20Idea%20GrapH%20PNG.html" class="pdf-badge-btn">[PNG]</a>
+      <br><a href="https://doi.org/10.5281/zenodo.22890511" target="_blank">DOI: 10.5281/zenodo.22890511</a>
+ </li>
   
+ </ul>
+ 
+ </div>
 
  
-     <footer>
-         <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
-	     <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
-     </footer>
+ <div id="1main">
+    <a href="MONOGRAPh.html" class="back-btn">&larr; MONOGRAPH MENU</a>
+ </div>
+  
 
-     <script>
-     let currentHighlighted = null;
+ <!-- 2. MONOGRAF FIGSHARE -->
 
-     function highlightImage(imgId) {
-     if (currentHighlighted) {
-      currentHighlighted.classList.remove('bounce-highlight');
-    }
+ <div id="figshare-monograph" class="monograph-box">
+ <h2>Figshare Monograph </h2>
+ <p style="text-align: center; font-size: 0.85em; color: #888;">Author: Marcin Słowik | Repository: Figshare</p>
 
-    const img = document.getElementById(imgId);
-    if (!img) return;
+ <ul class="mono-list">
+  
+ <li>
+    <strong>Gravitational Compression and Microscopic Core Closure:  Mechanical Squeezing Formulation</strong>
+    <a href="A%20Gravitational%20Compression%20and%20Microscopic%20Core%20Closure.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation: 04.10.2026</span>
+      <a href="https://doi.org/10.6084/m9.figshare.34063842" target="_blank">DOI: 10.6084/m9.figshare.34063842</a>
+   </li>
+  
+   <li>
+      <strong>The Slowik Hypothesis of Gravitational Collapse Stabilization: A Comprehensive Monograph</strong>
+      <a href="B%20The%20Slowik%20Hypothesis%20of%20Gravitational%20Collapse%20Stabilization.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation: 04.10.2026</span>
+      <a href="https://doi.org/10.6084/m9.figshare.34065471" target="_blank">DOI: 10.6084/m9.figshare.34065471</a>
+   </li>
+  
+   <li>
+      <strong>Time as a Sequence of Transitions and Mass Regulation Mechanism: From Hydrogen Cloud to Proton Star</strong>
+      <a href="C%20Time%20as%20a%20Sequence%20of%20Transitions%20and%20Mass%20Regulation.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation: 04.10.2026</span>
+      <a href="https://doi.org/10.6084/m9.figshare.34065564" target="_blank">DOI: 10.6084/m9.figshare.34065564</a>
+ </li>
+  
+ <li>
+    <strong>On the Dynamic Nature of Time and the Elimination of Event Horizons: The "Proton Star" Hypothesis</strong>
+    <a href="D%20On%20the%20Dynamic%20Nature%20of%20Time%20and%20the%20Elimination%20of%20Event.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation: 04.10.2026 </span>
+      <a href="https://doi.org/10.6084/m9.figshare.34065594" target="_blank">DOI: 10.6084/m9.figshare.34065594</a>
+ </li>
 
-    currentHighlighted = img;
-    img.classList.add('bounce-highlight');
-    }
+   <li>
+    <strong>Creation and Collapse Mechanism: Forward and Reverse Pathways PNG</strong>
+    <a href="E%20Creation%20and%20Collapse%20Mechanism%20Forward%20and%20Reverse%20Pathways.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation Date: 05.10.2026 </span>
+      <a href="https://doi.org/10.6084/m9.figshare.34069377" target="_blank">DOI: 10.6084/m9.figshare.34069377</a>
+ </li>
+ 
+ <li>
+    <strong>Finite-Core Collapse Model PNG</strong>
+     <a href="F%20Finite-Core%20Collapse%20Model.html" class="pdf-badge-btn">[PNG]</a>
+      <br><span class="mono-date">Creation: 06.10.2026 </span>
+     <a href="https://doi.org/10.6084/m9.figshare.34079730" target="_blank">DOI: 10.6084/m9.figshare.34079730</a>
+ </li>
 
-    function unhighlightImage(imgId) {
-    const img = document.getElementById(imgId);
-    if (img && img === currentHighlighted) {
-      img.classList.remove('bounce-highlight');
-      currentHighlighted = null;
-    }
-    }
+   <li>
+      <strong>The Creation & Collapse Mechanism of the Universe – Cosmic Hourglass </strong>
+      <a href="index.html#video-en" class="pdf-badge-btn">[VIDEO]</a>
+      <br><span class="mono-date">Creation: 07.10.2026  </span>
+      <a href="https://doi.org/10.6084/m9.figshare.34157148" target="_blank">DOI: 10.6084/m9.figshare.34157148</a>
+   </li>
 
-    function toggleMore() {
-    const moreContent = document.getElementById('more-content');
-    const btnText = document.getElementById('more-btn-text');
+   
+  
+ </ul>
+ 
+ </div>
+ 
+ <div id="1main">
+    <a href="MONOGRAPh.html" class="back-btn">&larr; MONOGRAPH</a>
+ </div>
+ 
+ </div>
+  
+ </div>
+   
+ </div>
 
-    if (moreContent.style.display === 'block') {
-      moreContent.style.display = 'none';
-      btnText.innerText = 'More...';
-    } else {
-      moreContent.style.display = 'block';
-      btnText.innerText = 'Less...';
-    }
-    }
-    </script>
+<footer>
+     <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
+     <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+</footer>
 
-    </body>
-    </html>
+<script>
+let currentHighlighted = null;
+
+function highlightImage(imgId) {
+if (currentHighlighted) {
+  currentHighlighted.classList.remove('bounce-highlight');
+}
+
+const img = document.getElementById(imgId);
+if (!img) return;
+
+currentHighlighted = img;
+img.classList.add('bounce-highlight');
+}
+
+function unhighlightImage(imgId) {
+const img = document.getElementById(imgId);
+if (img && img === currentHighlighted) {
+  img.classList.remove('bounce-highlight');
+  currentHighlighted = null;
+}
+}
+
+function toggleMore() {
+const moreContent = document.getElementById('more-content');
+const btnText = document.getElementById('more-btn-text');
+
+if (moreContent.style.display === 'block') {
+  moreContent.style.display = 'none';
+  btnText.innerText = 'More...';
+} else {
+  moreContent.style.display = 'block';
+  btnText.innerText = 'Less...';
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,530 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2.Microscopic Quantum Mechanisms of Stabilization</title>
+<meta name="description" content="2.Microscopic Quantum Mechanisms of Stabilization - Marcin Słowik.">
+<link rel="icon" type="image/png" href="logo3.png">
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d0d0d;
+  color: #ccc;
+  background-image: radial-gradient(#151515 1px, transparent 1px);
+  background-size: 20px 20px;
+  scroll-behavior: smooth;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: #cc3347;
+  border: 1px solid #2eb82e;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+}
+
+header {
+  height: 30px;
+  background: #000;
+  border-bottom: 1px solid #cc3347;
+}
+
+nav#top_menu {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #cc3347;
+  padding: 15px;
+}
 
 
-     <!DOCTYPE html>
-	 
-     <html lang="en">
-     <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Microscopic Quantum Mechanisms of Stabilization - Marcin Słowik</title>
-     <meta name="description" content="Microscopic Quantum Mechanisms of Stabilization.">
-     <link rel="icon" type="image/png" href="logo3.png">
-     <style>
-	 
-     body {
-      margin: 0;
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #0d0d0d;
-      color: #ccc;
-      background-image: radial-gradient(#151515 1px, transparent 1px);
-      background-size: 20px 20px;
-      scroll-behavior: smooth;
-    }
-	
-    .back-btn {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      color: #cc3347;
-      border: 1px solid #2eb82e;
-      text-decoration: none;
-      border-radius: 3px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 0.3s;
-    }
+nav#top_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
 
-    .back-btn:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-    }
-	
-    }
+nav#top_menu a {
+  display: block;
+  padding: 12px 24px;
+  color: #cc3347;
+  border: 1px solid #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
 
-    header {
-      height: 30px;
-      background: #000;
-      border-bottom: 1px solid #cc3347;
-    }
+nav#top_menu a:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+  color: #33cc33;
+  border-color: #33cc33;
+}
 
-    nav#top_menu {
-      background: #000;
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid #cc3347;
-      padding: 15px;
-    }
+#main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 0 15px;
+}
 
+aside#left, aside#right, .article-box, #slider, .monograph-box {
+  background: #141414;
+  border: 1px solid #2c2c2c;
+  border-radius: 3px;
+}
 
-    nav#top_menu ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      justify-content: center;
-    }
+aside#left, aside#right {
+  width: 22%;
+  padding: 20px;
+}
 
-    nav#top_menu a {
-      display: block;
-      padding: 12px 24px;
-      color: #cc3347;
-      border: 1px solid #000;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.1px;
-      transition: all 0.3s ease;
-      background: transparent;
-    }
+#content {
+  width: 56%;
+}
 
-    nav#top_menu a:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-      color: #33cc33;
-      border-color: #33cc33;
-    }
+aside#left ul, aside#right ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
 
-    #main {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      gap: 20px;
-      padding: 0 15px;
-    }
+aside#left li, aside#right li {
+  margin: 10px 0;
+}
 
-    aside#left, aside#right, .article-box, #slider, .monograph-box {
-      background: #141414;
-      border: 1px solid #2c2c2c;
-      border-radius: 3px;
-    }
+aside#left a, aside#right a {
+  display: block;
+  padding: 10px;
+  border: 1px solid #25a025;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.9em;
+  transition: all 0.3s;
+  background: transparent;
+}
 
-    aside#left, aside#right {
-      width: 22%;
-      padding: 20px;
-    }
+/* Styl dla listy po lewej: HOME taki sam jak .back-btn, reszta na biało */
+aside#left li:first-child a {
+  color: #cc3347;
+}
 
-    #content {
-      width: 56%;
-    }
+aside#left li:not(:first-child) a {
+  color: #ffffff;
+}
 
-    aside#left ul, aside#right ul {
-      list-style: none;
-      padding: 0;
-      margin: 15px 0 0 0;
-    }
+aside#left a:hover, aside#right a:hover {
+  background-color: rgba(37, 160, 37, 0.08);
+  color: #2eb82e;
+  border-color: #2eb82e;
+}
 
-    aside#left li, aside#right li {
-      margin: 10px 0;
-    }
+h1.top {
+  font-size: 1.1em;
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-      aside#left a, aside#right a {
-      display: block;
-      padding: 10px;
-      color: #cc3347;
-      border: 1px solid #25a025;
-      text-decoration: none;
-      border-radius: 2px;
-      text-align: center;
-      font-size: 0.9em;
-      transition: all 0.3s;
-      background: transparent;
-    }
+#slider {
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
-    aside#left a:hover, aside#right a:hover {
-      background-color: rgba(37, 160, 37, 0.08);
-      color: #2eb82e;
-      border-color: #2eb82e;
-    }
+#slider_frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 
-    h1.top {
-      font-size: 1.1em;
-      color: #d4af37;
-      border-bottom: 1px solid #333;
-      margin-top: 0;
-      padding-bottom: 10px;
-      text-align: center;
-      text-transform: uppercase;
-    }
+#slider_frame img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #333;
+  transition: border 0.3s, transform 0.3s;
+  filter: grayscale(30%);
+}
 
-    #slider {
-      padding: 15px;
-      margin-bottom: 20px;
-    }
+#slider_frame img:hover {
+  filter: grayscale(0%);
+  border-color: #2eb82e;
+  transform: scale(1.05);
+}
 
-    #slider_frame {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
+.bounce-highlight {
+  animation: bounceSmall 0.5s ease-in-out;
+  border: 1px solid #2eb82e !important;
+}
 
-    #slider_frame img {
-      width: 100%;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 2px;
-      border: 1px solid #333;
-      transition: border 0.3s, transform 0.3s;
-      filter: grayscale(30%);
-    }
+@keyframes bounceSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.article-box {
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.article-box h2 {
+  color: #d4af37;
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+  border: 1px solid #333;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-description {
+  margin-top: 20px;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+#more-content {
+  display: none;
+  margin-top: 15px;
+  border-top: 1px dashed #333;
+  padding-top: 15px;
+}
+
+.more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  color: #2eb82e;
+  border: 1px solid #2eb82e;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+}
+
+.monograph-box {
+  margin-top: 30px;
+  padding: 25px;
+}
+
+.monograph-box h2 {
+  color: #d4af37;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.mono-category {
+  color: #2eb82e;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-left: 2px solid #2eb82e;
+  padding-left: 8px;
+}
+
+.mono-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.mono-list li {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 2px;
+}
+
+.pdf-badge-btn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  color: #cc3347;
+  border: 1px solid #d4af37;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.pdf-badge-btn:hover {
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #ffcc00;
+}
+
+/* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
+.mono-list a.pdf-badge-btn {
+  color: #0d0d0d;
+  background: #cc3347;
+  border: 1px solid #cc3347;
+  font-size: 0.8em;
+  padding: 3px 10px;
+  margin-top: 0;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+.mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
+.mono-list a.pdf-badge-btn:hover {
+  color: #0d0d0d;
+  background: #ff4d63;
+  border-color: #ff4d63;
+  text-decoration: none;
+}
+
+.mono-list a {
+  color: #cc3347;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+  word-break: break-all;
+  font-size: 0.85em;
+}
+
+.mono-list a:hover {
+  color: #ff4d63;
+  text-decoration: underline;
+}
+
+.mono-date {
+  color: #cc8800;
+  font-size: 0.85em;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  color: #555;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column;
+  }
+  aside#left, #content, aside#right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #slider_frame {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav#top_menu a {
+    padding: 14px 24px;
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+  /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
+@media (max-width: 768px) {
+  *, *::before, *::after { box-sizing: border-box; }
+}
+.proposal-note {
+  border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
+  padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
+}
+.proposal-note strong { color: #cc3347; }
+
+   /* obrazki nigdy nie szersze niż ekran, wyśrodkowane */
+html, body { max-width: 100%; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+#content { min-width: 0; }
+nav#top_menu img { max-width: 80%; height: auto; }
+.article-box img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 12px auto;
+}
+.article-box h2 { overflow-wrap: anywhere; }
+.back-btn { max-width: 100%; box-sizing: border-box; }
+
+</style>
+</head>
+<body>
+
+<header></header>
+
+<nav id="top_menu">
+   <img src="logo3.png" alt="Logo">
+</nav>
+
+   <div id="main">
+    <aside id="left">
+    <h1 class="top">FINITE CORE</h1>
     
-    #slider_frame img:hover {
-      filter: grayscale(0%);
-      border-color: #2eb82e;
-      transform: scale(1.05);
-    }
+<ul>
+   <li><a href="index.html">&larr; Home</a></li>
+    
+   <li><a href="X1Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition.html#1.Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition">1. Mechanism for Halting Gravitational Collapse</a></li>
+    
+   <li><a href="#2.Microscopic Quantum Mechanisms of Stabilization"></a></li>
+    
+   <li><a href="X3microscopic-mechanisms-2.8msun.html#3.Microscopic-mechanisms-2.8msun">3. Microscopic-mechanisms-2.8msun</a></li>
+    
+   <li><a href="X4Gravitational Collapse Beyond the Neutron-Star Limit.html#4.Gravitational Collapse Beyond the Neutron-Star Limit: Can Standard-Model Matter Produce a Finite High-Density">4. Gravitational Collapse Beyond the Neutron-Star</a></li>
+    
+   <li><a href="X5Gravitational Compression and Microscopic Core Closure.html#5.Gravitational Compression and Microscopic Core Closure">5. Gravitational Compression and Microscopic Core Closure</a></li>
+</ul>
 
-    .bounce-highlight {
-      animation: bounceSmall 0.5s ease-in-out;
-      border: 1px solid #2eb82e !important;
-    }
-
-    @keyframes bounceSmall {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
-    }
-
-    .article-box {
-      padding: 25px;
-      margin-bottom: 25px;
-    }
-
-    .article-box h2 {
-      color: #d4af37;
-      margin-top: 0;
-      font-size: 1.3em;
-    }
-
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%;
-      height: 0;
-      margin-top: 20px;
-      border: 1px solid #333;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    .pdf-description {
-      margin-top: 20px;
-      font-size: 0.9em;
-      line-height: 1.6;
-      color: #bbb;
-    }
-
-    #more-content {
-      display: none;
-      margin-top: 15px;
-      border-top: 1px dashed #333;
-      padding-top: 15px;
-    }
-
-    .more-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 8px 16px;
-      color: #2eb82e;
-      border: 1px solid #2eb82e;
-      background: transparent;
-      border-radius: 3px;
-      cursor: pointer;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
-    }
-
-    .more-btn:hover {
-      background-color: rgba(46, 184, 46, 0.08);
-    }
-
-    .monograph-box {
-      margin-top: 30px;
-      padding: 25px;
-    }
-
-    .monograph-box h2 {
-      color: #d4af37;
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: 0;
-      border-bottom: 1px solid #333;
-      padding-bottom: 10px;
-      font-size: 1.2em;
-    }
-
-    .mono-category {
-      color: #2eb82e;
-      font-weight: bold;
-      margin-top: 20px;
-      text-transform: uppercase;
-      font-size: 1em;
-      border-left: 2px solid #2eb82e;
-      padding-left: 8px;
-    }
-
-    .mono-list {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0;
-    }
-
-    .mono-list li {
-      margin-bottom: 12px;
-      padding: 12px;
-      background: #111;
-      border: 1px solid #222;
-      border-radius: 2px;
-    }
-
-    .pdf-badge-btn {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 2px 8px;
-      font-size: 0.75em;
-      color: #cc3347;
-      border: 1px solid #d4af37;
-      background: transparent;
-      text-decoration: none;
-      border-radius: 2px;
-      font-weight: bold;
-      transition: all 0.2s;
-    }
-
-    .pdf-badge-btn:hover {
-      background-color: rgba(212, 175, 55, 0.15);
-      color: #ffcc00;
-    }
-
-    /* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
-    .mono-list a.pdf-badge-btn {
-      color: #0d0d0d;
-      background: #cc3347;
-      border: 1px solid #cc3347;
-      font-size: 0.8em;
-      padding: 3px 10px;
-      margin-top: 0;
-      border-radius: 3px;
-      letter-spacing: 0.5px;
-    }
-    .mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
-    .mono-list a.pdf-badge-btn:hover {
-      color: #0d0d0d;
-      background: #ff4d63;
-      border-color: #ff4d63;
-      text-decoration: none;
-    }
-
-    .mono-list a {
-      color: #cc3347;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 6px;
-      word-break: break-all;
-      font-size: 0.85em;
-    }
-
-    .mono-list a:hover {
-      color: #ff4d63;
-      text-decoration: underline;
-    }
-
-    .mono-date {
-      color: #cc8800;
-      font-size: 0.85em;
-    }
-
-    footer {
-      background: #000;
-      text-align: center;
-      color: #555;
-      padding: 30px;
-      margin-top: 50px;
-      border-top: 1px solid #222;
-      font-size: 0.8em;
-    }
-
-    @media (max-width: 768px) {
-      #main {
-        flex-direction: column;
-      }
-      aside#left, #content, aside#right {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      #slider_frame {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      nav#top_menu a {
-        padding: 14px 24px;
-        font-size: 1em;
-        width: 80%;
-        margin: 0 auto;
-      }
-    }
-      /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
-    @media (max-width: 768px) {
-      *, *::before, *::after { box-sizing: border-box; }
-    }
-    .proposal-note {
-      border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
-      padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
-    }
-    .proposal-note strong { color: #cc3347; }
-	
-         /* obrazki nigdy nie szersze niż ekran, wyśrodkowane */
-    html, body { max-width: 100%; overflow-x: hidden; }
-    img { max-width: 100%; height: auto; }
-    #content { min-width: 0; }
-    nav#top_menu img { max-width: 80%; height: auto; }
-    .article-box img {
-      display: block;
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto 12px auto;
-    }
-    .article-box h2 { overflow-wrap: anywhere; }
-    .back-btn { max-width: 100%; box-sizing: border-box; }
-	
-     </style>
-     </head>
-     <body>
-
-     <header></header>
-
-     <nav id="top_menu">
-        <img src="logo3.png" alt="Logo">
-     </nav>
-
-       <div id="main">
-        <aside id="left">
-        <h1 class="top">FINITE CORE Menu</h1>
-		
-   <ul>
-	    <li><a href="index.html">&larr; Home</a></li>
-		
-	    <li><a href="X1Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition.html#1.Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition">1. Mechanism for Halting Gravitational Collapse</a></li>
-		
-		<li><a href="#2.Microscopic Quantum Mechanisms of Stabilization">2. Microscopic Quantum Mechanisms of Stabilization</a></li>
-		
-		<li><a href="X3microscopic-mechanisms-2.8msun.html#3.Microscopic-mechanisms-2.8msun">3. Microscopic-mechanisms-2.8msun</a></li>
-		
-		<li><a href="X4Gravitational Collapse Beyond the Neutron-Star Limit.html#4.Gravitational Collapse Beyond the Neutron-Star Limit: Can Standard-Model Matter Produce a Finite High-Density">4. Gravitational Collapse Beyond the Neutron-Star</a></li>
-		
-		<li><a href="X5Gravitational Compression and Microscopic Core Closure.html#5.Gravitational Compression and Microscopic Core Closure">5. Gravitational Compression and Microscopic Core Closure</a></li>
-    </ul>
-	
-
-	
     </aside>
 
     <div id="content">
     <div id="slider">
     <div id="slider_frame">
-	  
+   
     <a href="MONOGRAPh.html">
        <img src="boob2.jpg" alt="Graphic 2">
     </a>
-	       
-     <a href="index.html#video-en">
-        <img src="boob.jpg" alt="Finite Core Video Series">
-     </a>
-	 
-	<a href="index.html#Package Formula-video-en">
-        <img src="boob1.jpg" alt="Package Formula Video Series">
-     </a>                            
+         
+    <a href="index.html#video-en">
+       <img src="boob.jpg" alt="Finite Core Video Series">
+    </a>
+   
+    <a href="index.html#Package Formula-video-en">
+       <img src="boob1.jpg" alt="Package Formula Video Series">
+    </a>                        
 
 
     <a href="GALERy.html">
-        <img src="boob3.png" alt="Graphic 4">
+       <img src="boob3.png" alt="Graphic 4">
     </a>
-	</div>
-	
+   </div>
+   
     </div>
-	
-	
-	<div class="article-box" id="2.Microscopic Quantum Mechanisms of Stabilization">
-      <h2>2.Microscopic Quantum Mechanisms of Stabilization</h2>
-    
+   
+   
+   <div class="article-box" id="2.Microscopic Quantum Mechanisms of Stabilization">
+      <h2>2.Microscopic Quantum Mechanisms of Stabilization (27.07.2026)</h2>
+      <br><a href="https://zenodo.org/records/21624309" class="pdf-badge-btn">DOI: 10.5281/zenodo.21624309</a>
 
-     <li>
-        Microscopic Quantum Mechanisms of Stabilization / Mikroskopowe kwantowe mechanizmy stabilizacji <span class="mono-date">| 27.07.2026</span>
-        <br><a href="https://zenodo.org/records/21624309" target="_blank">DOI: 10.5281/zenodo.21624309</a>
-    </li>
-	
+   
     <div class="image-container">
         <img src="-1-microscopic-mechanisms.png" alt="microscopic-mechanisms">
     </div>
-	
+   
      <div class="image-container">
         <img src="-2-microscopic-mechanisms.png" alt="microscopic-mechanisms">
     </div>
-	
-	 
-	</div>
-	 
-     <div id="1main">
-           <a href="X1Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition.html" class="back-btn">&larr; FiNiTE CORE MENU</a>
-     </div>
-		
-	 
-     </div>
- 
-     </div>
-    </div>
    
+   </div>
+   
+    <div id="1main">
+         <a href="X2Microscopic Quantum Mechanisms of Stabilization.html" class="back-btn">&larr; FiNiTE CORE</a>
     </div>
-  
-    <footer>
-           <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
-		   <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
-    </footer>
+      
+   </div>
+ 
+   </div>
+</div>
 
-    <script>
-    let currentHighlighted = null;
+<footer>
+            <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
+         <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+</footer>
 
-    function highlightImage(imgId) {
-    if (currentHighlighted) {
-      currentHighlighted.classList.remove('bounce-highlight');
-    }
+<script>
+let currentHighlighted = null;
 
-    const img = document.getElementById(imgId);
-    if (!img) return;
+function highlightImage(imgId) {
+if (currentHighlighted) {
+  currentHighlighted.classList.remove('bounce-highlight');
+}
 
-    currentHighlighted = img;
-    img.classList.add('bounce-highlight');
-    }
+const img = document.getElementById(imgId);
+if (!img) return;
 
-    function unhighlightImage(imgId) {
-    const img = document.getElementById(imgId);
-    if (img && img === currentHighlighted) {
-      img.classList.remove('bounce-highlight');
-      currentHighlighted = null;
-    }
-    }
+currentHighlighted = img;
+img.classList.add('bounce-highlight');
+}
 
-    function toggleMore() {
-    const moreContent = document.getElementById('more-content');
-    const btnText = document.getElementById('more-btn-text');
+function unhighlightImage(imgId) {
+const img = document.getElementById(imgId);
+if (img && img === currentHighlighted) {
+  img.classList.remove('bounce-highlight');
+  currentHighlighted = null;
+}
+}
 
-    if (moreContent.style.display === 'block') {
-      moreContent.style.display = 'none';
-      btnText.innerText = 'More...';
-    } else {
-      moreContent.style.display = 'block';
-      btnText.innerText = 'Less...';
-    }
-    }
-    </script>
+function toggleMore() {
+const moreContent = document.getElementById('more-content');
+const btnText = document.getElementById('more-btn-text');
 
-    </body>
-    </html>
+if (moreContent.style.display === 'block') {
+  moreContent.style.display = 'none';
+  btnText.innerText = 'More...';
+} else {
+  moreContent.style.display = 'block';
+  btnText.innerText = 'Less...';
+}
+}
+</script>
+
+</body>
+</html>
