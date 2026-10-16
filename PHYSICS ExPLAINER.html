@@ -10,10 +10,10 @@
    <link rel="icon" type="image/png" href="logo3.png">
    <style>
 
-html { scroll-behavior: smooth; }
-#video-en { scroll-margin-top: 20px; }
+   html { scroll-behavior: smooth; }
+   #video-en { scroll-margin-top: 20px; }
 
-body {
+  body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   background-color: #0d0d0d;
@@ -113,7 +113,7 @@ aside#left a, aside#right a {
   background: transparent;
 }
 
-/* Styl dla listy po lewej: HOME taki sam jak .back-btn, reszta na biało */
+
 aside#left li:first-child a {
   color: #da7c7f;
 }
@@ -326,20 +326,27 @@ h1.top {
   text-decoration: underline;
 }
 
-.mono-date {
-  color: #cc8800;
-  font-size: 0.85em;
+
+.proposal-note {
+  border-left: 3px solid #cc3347;
+  background: #0b0b0b;
+  color: #e6e6e6;
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
- footer {
-      background: #000;
-      text-align: center;
-      color: #5c78cb;
-      padding: 30px;
-      margin-top: 50px;
-      border-top: 1px solid #222;
-      font-size: 0.8em;
-    }
+
+footer {
+  background: #000;
+  text-align: center;
+  color: #5c78cb;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  font-size: 0.8em;
+}
 
 @media (max-width: 768px) {
   #main {
@@ -374,39 +381,40 @@ nav#top_menu img { max-width: 80%; height: auto; }
   max-width: 100%;
   height: auto;
   margin: 0 auto 12px auto;
-}
-.article-box h2 { overflow-wrap: anywhere; }
-.back-btn { max-width: 100%; box-sizing: border-box; }
+  }
+  .article-box h2 { overflow-wrap: anywhere; }
+  .back-btn { max-width: 100%; box-sizing: border-box; }
 
-</style>
-</head>
-<body>
+   </style>
+   </head>
+   <body>
 
-<header></header>
+   <header></header>
 
-<nav id="top_menu">
+   <nav id="top_menu">
    <img src="logo3.png" alt="Logo">
-</nav>
+   </nav>
 
-<div id="main">
+   <div id="main">
    <aside id="left">
    <h1 class="top">PHYSICS EXPLAINER</h1>
     
-<ul>
+   <ul>
    <li><a href="index.html">&larr; HOME</a></li>
+   <li><a href="Physics Used.html">PHYSICS USED AND COMBINED</a></li>
    <li><a href="#Compression Forces motion">COMPRESSION FORCES MOTION</a></li>
    <li><a href="core-size-estimates.html#CORE SIZE ESTIMATES">CORE SIZE ESTIMATES</a></li>
-</ul>
+   </ul>
 
-</aside>
+   </aside>
 
-<div id="content">
-<div id="slider">
-<div id="slider_frame">
+   <div id="content">
+   <div id="slider">
+   <div id="slider_frame">
   
-<a href="MONOGRAPh.html">
+   <a href="MONOGRAPh.html">
    <img src="boob2.jpg" alt="Graphic 2">
-</a>
+   </a>
        
 <a href="index.html#video-en">
    <img src="boob.jpg" alt="Finite Core Video Series">
@@ -465,10 +473,9 @@ nav#top_menu img { max-width: 80%; height: auto; }
 </div>
 
 <footer>
-       <p>© 2026 Marcin Słowik | All Rights Reserved</p>
-     
-     
-	 </footer>
+  <p>© 2026 Marcin Słowik | All Rights Reserved</p>
+  <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+</footer>
 
 <script>
 let currentHighlighted = null;

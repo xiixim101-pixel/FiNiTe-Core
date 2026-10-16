@@ -1,0 +1,359 @@
+
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PHYSICS USED AND COMBINED</title>
+   <meta name="description" content="Fields of physics used and combined in the Finite Core / Package Formula hypothesis - Marcin Słowik.">
+   <link rel="icon" type="image/png" href="logo3.png">
+   <style>
+   html { scroll-behavior: smooth; }
+   #video-en { scroll-margin-top: 20px; }
+
+  body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0d0d0d;
+  color: #ccc;
+  background-image: radial-gradient(#151515 1px, transparent 1px);
+  background-size: 20px 20px;
+  }
+
+  header {
+  height: 30px;
+  background: #000;
+  border-bottom: 1px solid #cc3347;
+  }
+
+  nav#top_menu {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #cc3347;
+  padding: 15px;
+  }
+
+  #main {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+aside#left, .article-box, #slider {
+  background: #141414;
+  border: 1px solid #2c2c2c;
+  border-radius: 3px;
+}
+
+aside#left {
+  width: 22%;
+  padding: 20px;
+}
+
+#content {
+  width: 56%;
+}
+
+aside#left ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+aside#left li { margin: 10px 0; }
+
+aside#left a {
+  display: block;
+  padding: 10px;
+  color: #da7c7f;
+  border: 1px solid #5c78cb;
+  text-decoration: none;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 0.9em;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+aside#left a:hover {
+  background-color: rgba(37, 160, 37, 0.08);
+  color: #2eb82e;
+  border-color: #2eb82e;
+}
+
+h1.top {
+  font-size: 1.1em;
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  margin-top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#slider {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#slider_frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+#slider_frame img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #333;
+  transition: border 0.3s, transform 0.3s;
+  filter: grayscale(30%);
+}
+
+#slider_frame img:hover {
+  filter: grayscale(0%);
+  border-color: #2eb82e;
+  transform: scale(1.05);
+}
+
+.article-box {
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.article-box h2 {
+  color: #d4af37;
+  margin-top: 0;
+  font-size: 1.3em;
+}
+
+.article-box h2.next { margin-top: 32px; }
+
+.intro {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #bbb;
+  margin: 0 0 22px 0;
+}
+
+/* spis: fizyka uzyta i polaczona */
+ol.fields {
+  list-style: none;
+  counter-reset: f;
+  margin: 10px 0;
+  padding: 0;
+}
+
+ol.fields li {
+  counter-increment: f;
+  position: relative;
+  margin-bottom: 12px;
+  padding: 12px 12px 12px 54px;
+  background: #111;
+  border: 1px solid #222;
+  border-left: 3px solid #2eb82e;
+  border-radius: 2px;
+}
+
+ol.fields li::before {
+  content: counter(f);
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  border-radius: 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+}
+
+ol.fields strong {
+  display: block;
+  color: #2eb82e;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  margin-bottom: 4px;
+}
+
+ol.fields span {
+  color: #bbb;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+ol.chain {
+  margin: 10px 0;
+  padding-left: 24px;
+  }
+
+  ol.chain li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  line-height: 1.6;
+  }
+
+  ol.chain b { color: #d4af37; }
+
+  .tag {
+  color: #cc8800;
+  font-size: 0.85em;
+  }
+
+  .pdf-description {
+  margin-top: 20px;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #bbb;
+  }
+
+  .back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: #da7c7f;
+  border: 1px solid #2eb82e;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  }
+
+  .back-btn:hover { background-color: rgba(46,184,46,0.08); }
+
+  footer {
+  background: #000;
+  text-align: center;
+  color: #5c78cb;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  font-size: 0.8em;
+  }
+
+  .proposal-note {
+  border-left: 3px solid #cc3347;
+  background: #0b0b0b;
+  color: #e6e6e6;
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+  }
+
+  .proposal-note strong { color: #cc3347; }
+
+  @media (max-width: 768px) {
+  *, *::before, *::after { box-sizing: border-box; }
+  #main { flex-direction: column; }
+  aside#left, #content { width: 100%; margin-bottom: 20px; }
+  #slider_frame { grid-template-columns: repeat(2, 1fr); }
+ }
+
+
+   </style>
+   </head>
+   <body>
+
+   <header></header>
+
+   <nav id="top_menu">
+   <img src="logo3.png" alt="Logo">
+   </nav>
+
+   <div id="main">
+
+   <aside id="left">
+    <h1 class="top">Physics Used and Combined</h1>
+    <ul>
+      <li><a href="PHYSICS ExPLAINER.html">&larr; PHYSICS EXPLAINER</a></li>              
+    </ul>
+   </aside>
+
+  <div id="content">
+
+    <div id="slider">
+      <div id="slider_frame">
+        <a href="MONOGRAPh.html"><img src="boob2.jpg" alt="Graphic 1"></a>
+        <a href="index.html#video-en"><img src="boob.jpg" alt="Finite Core Video Series"></a>
+        <a href="index.html#Package Formula-video-en"><img src="boob1.jpg" alt="Package Formula Video Series"></a>
+        <a href="GALERy.html"><img src="boob3.png" alt="Graphic 4"></a>
+      </div>
+    </div>
+
+    <div class="article-box" id="video-en">
+      <p class="intro">Index of the fields of physics joined in the Finite Core / Package Formula hypothesis.</p>
+
+      <h2>Fields of physics</h2>
+      <ol class="fields">
+        <li><strong>General Relativity (GTR)</strong>
+          <span>Schwarzschild radius Rs = 2GM/c², rotating (Kerr) solution and frame-dragging, event horizon, the Package Formula Rs = N × 8.27 km.</span></li>
+        <li><strong>Astrophysics</strong>
+          <span>Stellar fusion up to iron, supernovae, neutron stars, the TOV limit, black holes, accretion disks, X-ray binaries (Cygnus X-1, GRO J1655-40, GRS 1915+105), magnetars, Sagittarius A*.</span></li>
+        <li><strong>Nuclear Physics</strong>
+          <span>Hydrogen-to-helium fusion and mass defect (about 0.7%), beta decay, electron capture, magic numbers, He-4 and C-12 as analogues.</span></li>
+        <li><strong>Standard Model</strong>
+          <span>Quarks (up, down), leptons, gluons, W± and Z⁰ bosons, photon, Higgs boson, the four fundamental forces.</span></li>
+        <li><strong>Quantum Chromodynamics</strong>
+          <span>The strong force, binding energy (about 99% of nucleon mass), quark confinement and deconfinement, quark-gluon plasma.</span></li>
+        <li><strong>Electroweak Theory and the Higgs Mechanism</strong>
+          <span>Higgs field (246 GeV), mass from the Higgs (about 1%), reverse phase transition, symmetry restoration (v → 0), melting of W and Z.</span></li>
+        <li><strong>Quantum Mechanics</strong>
+          <span>Tunneling through the Coulomb barrier, Pauli exclusion principle, uncertainty principle, degeneracy pressure, the quantized “package”.</span></li>
+        <li><strong>Thermodynamics and Statistical Physics</strong>
+          <span>Phase transitions, equation of state P = 1/3 u, radiation pressure, thermal energy budget (OpenQuestion).</span></li>
+        <li><strong>Electrodynamics</strong>
+          <span>Coulomb repulsion, magnetic field energy B²/2μ₀, finite-core dynamo with a conductive shell, magnetar fields.</span></li>
+        <li><strong>Relativistic Mechanics</strong>
+          <span>Relativistic and ultra-relativistic gas, particles moving at c, E = mc², barrier energy 5.01 × 10⁴⁷ J.</span></li>
+        <li><strong>Classical Mechanics</strong>
+          <span>Rotation, angular momentum, gravity–rotation balance, spin parameter a*.</span></li>
+        <li><strong>Cosmology</strong>
+          <span>The early Universe about 10⁻¹² s after the Big Bang, electroweak epoch, composition of the Milky Way (74% hydrogen, 24% helium).</span></li>
+        <li><strong>Physical Mathematics</strong>
+          <span>Dimensionless parameter η, scaling, unit conversion (GeV → J), the linear Package Formula, hexagonal geometry.</span></li>
+        <li><strong>Chemistry and Emergence</strong>
+          <span>Atoms as the foundation of chemistry, then molecules, biology, life – the window of life.</span></li>
+        <li><strong>Physics of Time (hypothesis)</strong>
+          <span>Time as a sequence, gravitational slowing of time, the frequency of time, formula 5+1+5.</span></li>
+      </ol>
+
+      <h2 class="next">How they are combined</h2>
+      <ol class="chain">
+        <li><b>Higgs field</b> gives quarks about 1% of their mass <span class="tag">(Higgs mechanism)</span></li>
+        <li><b>Strong force</b> binds them and generates the other 99% <span class="tag">(QCD)</span></li>
+        <li><b>Weak force</b> turns the neutron into a proton and an electron <span class="tag">(nuclear physics)</span></li>
+        <li><b>Electromagnetism</b> builds atoms, the foundation of chemistry <span class="tag">(electrodynamics, quantum mechanics)</span></li>
+        <li><b>Chemistry → biology → life</b> in the window of life, held by stellar fusion <span class="tag">(astrophysics, thermodynamics)</span></li>
+        <li><b>Fuel runs out</b> and gravity, the weakest force, reverses the sequence <span class="tag">(general relativity)</span></li>
+        <li><b>Finite core</b> with W, Z and Higgs layers, about 15.8 m <span class="tag">(electroweak theory, relativistic mechanics)</span></li>
+        <li><b>Black hole</b> built from packages of 2.8 M☉ <span class="tag">(Package Formula, cosmology)</span></li>
+      </ol>
+    </div>
+
+    <div class="pdf-description">
+      <a href="Physics Used.html" class="back-btn">&larr; Physics Used and Combined</a>
+    </div>
+
+   </div>
+   </div>
+
+   <footer>
+     <p>© 2026 Marcin Słowik | All Rights Reserved</p>
+     <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+   </footer>
+
+   </body>
+   </html>
