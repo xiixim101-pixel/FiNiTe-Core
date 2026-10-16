@@ -1,6 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2.Microscopic Quantum Mechanisms of Stabilization</title>
@@ -345,16 +348,28 @@ h1.top {
   font-size: 0.85em;
 }
 
-footer {
+
+  footer {
   background: #000;
   text-align: center;
-  color: #555;
+  color: #5c78cb;
   padding: 30px;
   margin-top: 50px;
   border-top: 1px solid #222;
   font-size: 0.8em;
-}
+  }
 
+  .proposal-note {
+  border-left: 3px solid #cc3347;
+  background: #0b0b0b;
+  color: #e6e6e6;
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+  }
+
+  .proposal-note strong { color: #cc3347; }
 @media (max-width: 768px) {
   #main {
     flex-direction: column;
@@ -398,6 +413,18 @@ nav#top_menu img { max-width: 80%; height: auto; }
 .article-box h2 { overflow-wrap: anywhere; }
 .back-btn { max-width: 100%; box-sizing: border-box; }
 
+
+/* aktualna strona w menu - niebieski, świecący tekst */
+aside#left li a.current,
+aside#left li:not(:first-child) a.current {
+  color: #3399ff;
+  border-color: #3399ff;
+  text-shadow: 0 0 6px #3399ff, 0 0 12px #1a75ff;
+  box-shadow: 0 0 8px rgba(51,153,255,0.5);
+}
+
+/* długie nazwy w menu zawijają się, nie wychodzą poza ramkę */
+aside#left a, aside#right a { overflow-wrap: anywhere; word-break: normal; box-sizing: border-box; }
 </style>
 </head>
 <body>
@@ -417,7 +444,7 @@ nav#top_menu img { max-width: 80%; height: auto; }
     
    <li><a href="X1Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition.html#1.Mechanism for Halting Gravitational Collapse via Reverse Higgs Phase Transition">1. Mechanism for Halting Gravitational Collapse</a></li>
     
-   <li><a href="#2.Microscopic Quantum Mechanisms of Stabilization"></a></li>
+   <li><a href="#2.Microscopic Quantum Mechanisms of Stabilization" class="current">2. Microscopic Quantum Mechanisms of Stabilization</a></li>
     
    <li><a href="X3microscopic-mechanisms-2.8msun.html#3.Microscopic-mechanisms-2.8msun">3. Microscopic-mechanisms-2.8msun</a></li>
     
@@ -478,10 +505,9 @@ nav#top_menu img { max-width: 80%; height: auto; }
 </div>
 
 <footer>
-            <p>© 2026 Marcin Słowik | ORCID: <a href="https://orcid.org/0009-0004-6707-4546" target="_blank">0009-0004-6707-4546</a> | All Rights Reserved</p>
-         <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
+  <p>© 2026 Marcin Słowik | All Rights Reserved</p>
+  <p class="proposal-note"><strong>Note:</strong> this is a proposal that has not been verified yet.</p>
 </footer>
-
 <script>
 let currentHighlighted = null;
 
