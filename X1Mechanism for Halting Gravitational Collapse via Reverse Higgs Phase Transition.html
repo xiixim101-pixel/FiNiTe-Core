@@ -10,10 +10,8 @@
   <link rel="icon" type="image/png" href="logo3.png">
   <style>
 
-  html { scroll-behavior: smooth; }
-  #video-en { scroll-margin-top: 20px; }
 
-  body {
+body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
   background-color: #0d0d0d;
@@ -21,23 +19,41 @@
   background-image: radial-gradient(#151515 1px, transparent 1px);
   background-size: 20px 20px;
   scroll-behavior: smooth;
-  }
+}
 
-  header {
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: #cc3347;
+  border: 1px solid #2eb82e;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background-color: rgba(46, 184, 46, 0.08);
+}
+
+header {
   height: 30px;
   background: #000;
   border-bottom: 1px solid #cc3347;
-  }
+}
 
-  nav#top_menu {
+nav#top_menu {
   background: #000;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #cc3347;
   padding: 15px;
-  }
+}
 
-  nav#top_menu ul {
+
+nav#top_menu ul {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -45,13 +61,13 @@
   margin: 0;
   list-style: none;
   justify-content: center;
-  }
+}
 
-  nav#top_menu a {
+nav#top_menu a {
   display: block;
   padding: 12px 24px;
-  color: #2eb82e;
-  border: 1px solid #2eb82e;
+  color: #cc3347;
+  border: 1px solid #000;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
@@ -121,18 +137,6 @@ aside#left li:not(:first-child) a {
   color: #ffffff;
 }
 
-
-/* Styl dla listy po lewej: HOME taki sam jak .back-btn, reszta na biało */
-aside#left li:first-child a {
-  color: #cc3347;
-}
-
-aside#left li:not(:first-child) a {
-  color: #ffffff;
-}
-
-
-
 aside#left a:hover, aside#right a:hover {
   background-color: rgba(37, 160, 37, 0.08);
   color: #2eb82e;
@@ -148,16 +152,6 @@ h1.top {
   text-align: center;
   text-transform: uppercase;
 }
-
-.back-btn
-{
-  display: inline-block; margin-bottom: 20px; padding: 10px 20px; color: #cc3347;
-  border: 1px solid #2eb82e; text-decoration: none; border-radius: 3px;
-  font-weight: bold; text-transform: uppercase; transition: all 0.3s;
-}
-.back-btn:hover { background-color: rgba(46,184,46,0.08);
-}
-
 
 #slider {
   padding: 15px;
@@ -263,7 +257,6 @@ h1.top {
   padding: 25px;
 }
 
-
 .monograph-box h2 {
   color: #d4af37;
   text-align: center;
@@ -299,26 +292,45 @@ h1.top {
 }
 
 .pdf-badge-btn {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 2px 8px;
-      font-size: 0.75em;
-      color: #cc3347;
-      border: 1px solid #d4af37;
-      background: transparent;
-      text-decoration: none;
-      border-radius: 2px;
-      font-weight: bold;
-      transition: all 0.2s;
-    }
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  color: #cc3347;
+  border: 1px solid #d4af37;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
 
-    .pdf-badge-btn:hover {
-      background-color: rgba(212, 175, 55, 0.15);
-      color: #ffcc00;
-    }
+.pdf-badge-btn:hover {
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #ffcc00;
+}
+
+/* przycisk PDF: wypełniony, ze strzałką - odróżnia się od linku DOI */
+.mono-list a.pdf-badge-btn {
+  color: #0d0d0d;
+  background: #cc3347;
+  border: 1px solid #cc3347;
+  font-size: 0.8em;
+  padding: 3px 10px;
+  margin-top: 0;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+.mono-list a.pdf-badge-btn::before { content: "\279C\00a0"; }
+.mono-list a.pdf-badge-btn:hover {
+  color: #0d0d0d;
+  background: #ff4d63;
+  border-color: #ff4d63;
+  text-decoration: none;
+}
 
 .mono-list a {
-  color: #25a025;
+  color: #cc3347;
   text-decoration: none;
   display: inline-block;
   margin-top: 6px;
@@ -327,7 +339,7 @@ h1.top {
 }
 
 .mono-list a:hover {
-  color: #2eb82e;
+  color: #ff4d63;
   text-decoration: underline;
 }
 
@@ -336,7 +348,8 @@ h1.top {
   font-size: 0.85em;
 }
 
- footer {
+
+  footer {
   background: #000;
   text-align: center;
   color: #5c78cb;
@@ -357,31 +370,35 @@ h1.top {
   }
 
   .proposal-note strong { color: #cc3347; }
-
 @media (max-width: 768px) {
   #main {
     flex-direction: column;
- }
- aside#left, #content, aside#right {
+  }
+  aside#left, #content, aside#right {
     width: 100%;
     margin-bottom: 20px;
-}
+  }
   #slider_frame {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
   nav#top_menu a {
     padding: 14px 24px;
     font-size: 1em;
     width: 80%;
     margin: 0 auto;
- }
+  }
 }
   /* mobile: padding wliczony w szerokość, żeby nic nie wychodziło poza ekran */
 @media (max-width: 768px) {
   *, *::before, *::after { box-sizing: border-box; }
 }
+.proposal-note {
+  border-left: 3px solid #cc3347; background: #0b0b0b; color: #e6e6e6;
+  padding: 10px 14px; margin: 14px 0; font-size: 0.9em; line-height: 1.5;
+}
+.proposal-note strong { color: #cc3347; }
 
-/* obrazki nigdy nie szersze niż ekran, wyśrodkowane */
+   /* obrazki nigdy nie szersze niż ekran, wyśrodkowane */
 html, body { max-width: 100%; overflow-x: hidden; }
 img { max-width: 100%; height: auto; }
 #content { min-width: 0; }
