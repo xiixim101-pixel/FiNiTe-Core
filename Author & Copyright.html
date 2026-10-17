@@ -20,7 +20,7 @@
     position: relative;
   }
 
-  /* Tło ze zdjęciem – osobna warstwa, działa też na telefonach (iOS) */
+  /* Tło ze zdjęciem */
   body::before {
     content: "";
     position: fixed;
@@ -29,7 +29,6 @@
     background: #0d0d0d url("boobxx.png") center center / cover no-repeat;
   }
 
-  /* Delikatne przyciemnienie tła */
   body::after {
     content: "";
     position: fixed;
@@ -38,7 +37,6 @@
     background: rgba(0, 0, 0, 0.15);
   }
 
-  /* Pasek z całym napisem – tylko na telefonie */
   .hero { display: none; }
 
   header {
@@ -55,113 +53,116 @@
     padding: 15px;
   }
 
-  nav#top_menu img {
-    max-width: 100%;
-    height: auto;
-  }
+  nav#top_menu img { max-width: 100%; height: auto; }
 
   #main {
-    max-width: 900px;
+    max-width: 760px;
     margin: 30px auto;
     padding: 0 15px;
   }
 
-  .back-btn {
+  .back-link {
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    color: #da7c7f;
-    border: 1px solid #2eb82e;
-    background: rgba(0, 0, 0, 0.55);
+    margin-bottom: 18px;
+    padding: 8px 0;
+    color: #aaa;
     text-decoration: none;
-    border-radius: 3px;
-    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
   }
 
-  .back-btn:hover { background-color: rgba(46, 184, 46, 0.15); }
+  .back-link:hover { color: #fff; border-bottom-color: #888; }
 
-  /* Półprzezroczysty panel na tle obrazka */
+  /* Panel */
   .author-section {
-    background: rgba(12, 12, 12, 0.62);
+    background: rgba(12, 12, 12, 0.72);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    border: 1px solid rgba(212, 175, 55, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-left: 3px solid #d4af37;
-    border-radius: 3px;
-    padding: 30px;
-    color: #e6e6e6;
-    line-height: 1.6;
-  }
-
-  .author-section p { margin: 0 0 14px 0; }
-
-  .author-name {
-    font-size: 1.2em;
-    margin-bottom: 20px !important;
-  }
-
-  .author-name strong { color: #d4af37; }
-
-  .links {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .pdf-badge-btn,
-  .pdf-badge-btn1,
-  .pdf-badge-btn2 {
-    display: inline-block;
-    padding: 8px 14px;
-    font-size: 0.9em;
-    background: rgba(0, 0, 0, 0.45);
-    text-decoration: none;
     border-radius: 2px;
-    font-weight: bold;
-    transition: all 0.2s;
-    word-break: break-all;
+    padding: 32px 34px;
+    color: #d6d6d6;
+    line-height: 1.7;
   }
 
-  .pdf-badge-btn  { color: #d4af37; border: 1px solid #cc3347; }
-  .pdf-badge-btn1 { color: #2eb82e; border: 1px solid #1E90FF; }
-  .pdf-badge-btn2 { color: #1E90FF; border: 1px solid #d4af37; }
-
-  .pdf-badge-btn:hover,
-  .pdf-badge-btn1:hover,
-  .pdf-badge-btn2:hover {
-    background-color: rgba(212, 175, 55, 0.18);
-    color: #ffcc00;
+  .author-section h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #f0f0f0;
   }
+
+  .role {
+    margin: 0 0 24px 0;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #d4af37;
+  }
+
+  .info { margin: 0; padding: 0; }
+
+  .info-row {
+    display: flex;
+    gap: 20px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .info-row dt {
+    flex: 0 0 110px;
+    margin: 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8a8a8a;
+    padding-top: 2px;
+  }
+
+  .info-row dd { margin: 0; word-break: break-word; }
+
+  .info-row a {
+    color: #e0e0e0;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .info-row a:hover { color: #fff; border-bottom-color: #d4af37; }
 
   .copyright {
-    border-top: 1px dashed rgba(255, 255, 255, 0.2);
+    margin-top: 12px;
     padding-top: 18px;
-    font-size: 0.92em;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.88em;
+    color: #aaa;
   }
 
-  .copyright p:last-child { margin-bottom: 0; }
+  .copyright p { margin: 0 0 8px 0; }
+  .copyright p:last-child { margin-bottom: 0; color: #d6d6d6; }
 
   @media (max-width: 768px) {
-    /* na telefonie obrazek jest pokazany w całości (z napisem FiNiTE CORE), nie przycięty */
     body::before, body::after { display: none; }
     .hero {
       display: block;
       width: 100%;
       aspect-ratio: 1200 / 627;
-      background: #0d0d0d url("boobxx.png") center center / 100% 100% no-repeat;
-      border-bottom: 1px solid #cc3347;
+      background:
+        linear-gradient(to bottom, rgba(13,13,13,0) 65%, #0d0d0d 100%),
+        url("boobxx.png") center center / 100% 100% no-repeat;
+      filter: brightness(1.35) contrast(1.05);
+      margin-bottom: -30px;
     }
-    .author-section { background: rgba(12, 12, 12, 0.85); }
     #main { margin: 20px auto; }
-    .author-section { padding: 20px 16px; }
-    .links { flex-direction: column; }
-    .links a { display: block; text-align: center; }
-    .back-btn { display: block; text-align: center; }
+    .author-section { padding: 22px 18px; background: rgba(12, 12, 12, 0.78); }
+    .author-section h1 { font-size: 1.3em; }
+    .info-row { flex-direction: column; gap: 2px; }
+    .info-row dt { flex: none; }
   }
 </style>
 </head>
@@ -176,20 +177,30 @@
 <div class="hero" role="img" aria-label="Finite Core"></div>
 
 <div id="main">
-  <a href="index.html" class="back-btn">&larr; HOME</a>
+  <a href="index.html" class="back-link">&larr; Home</a>
 
   <div class="author-section">
-    <p class="author-name"><strong>Author:</strong> Marcin Słowik</p>
+    <h1>Marcin Słowik</h1>
+    <p class="role">Author</p>
 
-    <ul class="links">
-      <li><a href="https://orcid.org/0009-0004-6707-4546" class="pdf-badge-btn">orcid:0009-0004-6707-4546</a></li>
-      <li><a href="https://www.linkedin.com/in/marcin-s%C5%82owik-682ba7407" class="pdf-badge-btn1">Linkedin.com</a></li>
-      <li><a href="https://www.youtube.com/@Rospek-xiixim" class="pdf-badge-btn2">Youtube.com</a></li>
-    </ul>
+    <dl class="info">
+      <div class="info-row">
+        <dt>ORCID</dt>
+        <dd><a href="https://orcid.org/0009-0004-6707-4546">0009-0004-6707-4546</a></dd>
+      </div>
+      <div class="info-row">
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/marcin-s%C5%82owik-682ba7407">linkedin.com/in/marcin-słowik</a></dd>
+      </div>
+      <div class="info-row">
+        <dt>YouTube</dt>
+        <dd><a href="https://www.youtube.com/@Rospek-xiixim">youtube.com/@Rospek-xiixim</a></dd>
+      </div>
+    </dl>
 
     <div class="copyright">
       <p>All materials, texts, layouts, and source code of this monograph and website are protected by copyright law.</p>
-      <p><strong>© 2026 Marcin Słowik. All Rights Reserved.</strong></p>
+      <p>© 2026 Marcin Słowik. All Rights Reserved.</p>
     </div>
   </div>
 </div>
