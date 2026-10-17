@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +35,11 @@
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.15);
   }
+
+  /* Pasek z całym napisem – tylko na telefonie */
+  .hero { display: none; }
 
   header {
     height: 30px;
@@ -143,6 +147,16 @@
   .copyright p:last-child { margin-bottom: 0; }
 
   @media (max-width: 768px) {
+    /* na telefonie obrazek jest pokazany w całości (z napisem FiNiTE CORE), nie przycięty */
+    body::before, body::after { display: none; }
+    .hero {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1200 / 627;
+      background: #0d0d0d url("boobxx.png") center center / 100% 100% no-repeat;
+      border-bottom: 1px solid #cc3347;
+    }
+    .author-section { background: rgba(12, 12, 12, 0.85); }
     #main { margin: 20px auto; }
     .author-section { padding: 20px 16px; }
     .links { flex-direction: column; }
@@ -159,6 +173,8 @@
   <img src="logo3.png" alt="Logo">
 </nav>
 
+<div class="hero" role="img" aria-label="Finite Core"></div>
+
 <div id="main">
   <a href="index.html" class="back-btn">&larr; HOME</a>
 
@@ -166,10 +182,9 @@
     <p class="author-name"><strong>Author:</strong> Marcin Słowik</p>
 
     <ul class="links">
-      
+      <li><a href="https://orcid.org/0009-0004-6707-4546" class="pdf-badge-btn">orcid:0009-0004-6707-4546</a></li>
       <li><a href="https://www.linkedin.com/in/marcin-s%C5%82owik-682ba7407" class="pdf-badge-btn1">Linkedin.com</a></li>
       <li><a href="https://www.youtube.com/@Rospek-xiixim" class="pdf-badge-btn2">Youtube.com</a></li>
-	  <li><a href="https://orcid.org/0009-0004-6707-4546" class="pdf-badge-btn">orcid:0009-0004-6707-4546</a></li>
     </ul>
 
     <div class="copyright">
